@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Load stylesheets -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="small.css">
+    <link rel="stylesheet" href="large.css">
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v5.js"></script>
+</head>
+
+<body>
+    <!-- Create a div where the graph will take place -->
+    <header>
+        <a href="https://djsprenk.com"><img id="logo" src="assets/sprenk-logo-gradient-white.png" alt="DJ Sprenk"></a>
+        <h1 id="title">
+            Set Explorer
+        </h1>
+        <img id="settings" src="assets/gear-white.svg"/>
+    </header>
+    <aside id="controls" class="hidden">
+        <div id="sort">
+            <strong>Sort:</strong>
+            <span class="control" data-control="order" data-value="newest" title="Show newest first">Newest</span>,
+            <span class="control" data-control="order" data-value="oldest" title="Show oldest first">Oldest</span>
+        </div>
+        <div id="graph-type">
+            <strong>Graph:</strong>
+            <span class="control" data-control="graph" data-value="playlist" title="Show playlists">Playlists</span>,
+            <span class="control" data-control="graph" data-value="timeline" title="Show timelines">Timelines</span>
+        </div>
+        <div id="scale">
+            <strong>Scale:</strong>
+            <span class="control" data-control="scale" data-value="fit" title="Scale relative">Fit</span>,
+            <span class="control" data-control="scale" data-value="relative" title="Scale relative">Relative</span>
+        </div>
+    </aside>
+    <main id="my_dataviz">
+        <div class="legend hidden set-thumbnail">Set</div>
+        <div class="legend hidden set-title">Title</div>
+        <div class="legend hidden timeline">Energy</div>
+    </main>
+    <footer>© DJ Sprenk | <a href="about.html">About this project</footer>
+</body>
+
+<!-- Hack in some song data, to by dynamically loaded later -->
+<script type="text/javascript" src="./song-data.js"></script>
+
+<!-- Load our scripts -->
+<script type="text/javascript" src="./cookie.js"></script>
+<script type="text/javascript" src="./playlist.js"></script>
+<script type="text/javascript" src="./timeline.js"></script>
+<script type="text/javascript" src="./index.js"></script>
