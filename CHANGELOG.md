@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-04-03
+
 ### Added
 
 - Previous events page redesigned as a vertical timeline with year markers (pink circle + label), per-event tick marks, and year-grouped achievements callout block inline between the year header and events
