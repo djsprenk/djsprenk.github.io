@@ -3,6 +3,15 @@
   --color-brand-pink: #b82b5a;
   --color-brand-yellow: #fdf38a;
 
+  /* Social platform brand colors */
+  --color-mixcloud: #5000ff;
+  --color-soundcloud: #ff5500;
+  --color-instagram: #e1306c;
+  --color-facebook: #1877f2;
+  --color-patreon: #f96854;
+  --color-venmo: #3d95ce;
+  --color-paypal: #009cde;
+
   /* Colors */
   --color-primary: #b82b5a;
   --color-bg: #0f0f0f;

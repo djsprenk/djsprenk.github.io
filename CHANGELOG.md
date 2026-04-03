@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Full past events list in `src/_data/events.json` scraped verbatim from djsprenk.com, covering 2021–2025 with ~58 entries across all years; all 2025 events moved from upcoming to previous since they have passed
 - `previousEventsByYear` Eleventy filter in `.eleventy.js` to group and sort past events by year descending, with events within each year sorted most-recent-first
 - URLs for known event organizers across multiple entries: Interfusion Festival, Zouk Heat, RVA Zouk Movement, BraZouky, Zouk Conexão, Zouk Pirates, Havana Club Social, Fuego y Candela
+- Social and payment platform brand color tokens in `tokens.css` (`--color-mixcloud`, `--color-soundcloud`, `--color-instagram`, `--color-facebook`, `--color-patreon`, `--color-venmo`, `--color-paypal`) and global `a[href*="…"]` rules in `base.css` so any link to these platforms is automatically colored site-wide
 
 ### Changed
 
