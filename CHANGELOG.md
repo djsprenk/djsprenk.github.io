@@ -20,6 +20,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `src/events/upcoming.njk` — event name rendered as a link when a `url` field is present, replacing the separate "Details" link
 - `src/events/previous.njk` — event names rendered as links when a `url` field is present
 - Content width capped at `--max-width-prose` (760px) on all pages for improved readability; homepage retains full `--max-width` (1100px) via a `wideLayout: true` frontmatter flag and `main.wide` CSS override
+- `--font-display` updated to `'Brick Riot', Georgia, serif` so all headings use the same font as the nav logo
 
 - `CLAUDE.md` — guidance file for Claude Code covering commands, architecture,
   data files, CSS token system, Formspree placeholders, and SSH remote setup
