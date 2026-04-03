@@ -5,28 +5,30 @@ title: Previous Events
 
 <h1>Previous Events</h1>
 
-{% for group in events | previousEventsByYear %}
-<h2>{{ group.year }}</h2>
-<ul class="event-list">
-  {% for event in group.events %}
-  <li class="event-item">
-    <span class="event-item-name">{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.name }}</a>{% else %}{{ event.name }}{% endif %}{% if event.note %} <em>— {{ event.note }}</em>{% endif %}</span>
-    <span class="event-item-meta">{{ event.location }}</span>
-  </li>
+{% set milestonesByYear = milestones | indexByYear %}
+<div class="timeline">
+  {% for group in events | previousEventsByYear %}
+  {% set yearMilestone = milestonesByYear[group.year] %}
+  <div class="timeline-year">
+    <div class="timeline-year-label">{{ group.year }}</div>
+    {% if yearMilestone %}
+    <ul class="timeline-achievements">
+      {% for achievement in yearMilestone.achievements %}
+      <li class="timeline-achievement">{{ achievement }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <ul class="timeline-events">
+      {% for event in group.events %}
+      <li class="timeline-event">
+        <span class="timeline-event-name">{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.name }}</a>{% else %}{{ event.name }}{% endif %}{% if event.note %} <em>— {{ event.note }}</em>{% endif %}</span>
+        <span class="timeline-event-meta">{{ event.location }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
   {% endfor %}
-</ul>
-{% endfor %}
+</div>
 
-<h2>Milestones</h2>
-{% for milestone in milestones | reverse %}
-<h3>{{ milestone.year }}</h3>
-<ul class="event-list">
-  {% for achievement in milestone.achievements %}
-  <li class="event-item">
-    <span class="event-item-name">{{ achievement }}</span>
-  </li>
-  {% endfor %}
-</ul>
-{% endfor %}
 
 <p><a href="/events/upcoming">View upcoming events &rarr;</a></p>

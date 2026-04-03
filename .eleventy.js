@@ -18,6 +18,13 @@ module.exports = function (eleventyConfig) {
       }));
   });
 
+  eleventyConfig.addFilter('indexByYear', (arr) => {
+    return arr.reduce((acc, item) => {
+      acc[String(item.year)] = item;
+      return acc;
+    }, {});
+  });
+
   // Shortcodes
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 

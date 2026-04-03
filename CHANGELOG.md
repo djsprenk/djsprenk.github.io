@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Previous events page redesigned as a vertical timeline with year markers (pink circle + label), per-event tick marks, and year-grouped achievements callout block inline between the year header and events
+- `indexByYear` Eleventy filter to look up milestone data by year in templates
+- 2025 milestone "First event in Europe" added to `milestones.json`
+
+### Changed
+
+- Milestone wording: "First international DJ performance" → "First outside-US performance" (2022); "First West Coast DJ performance" → "First event on the West Coast" (2023)
+- Standalone Milestones section removed from previous events page — achievements now appear inline in the timeline
+
 ## [0.2.0] - 2026-04-03
 
 ### Added
