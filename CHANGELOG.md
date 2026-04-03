@@ -6,11 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-04-03
+
 ### Added
 
 - `docs/wishlist.md` — feature checklist for tracking planned site improvements
 - `text-transform: uppercase` on headings and nav logo to avoid a broken lowercase `n` glyph in the Brick Riot font
 - `/version` slash command at `.claude/commands/version.md` for bumping semver, updating `package.json`/`package-lock.json`, and promoting `[Unreleased]` changelog entries to a dated release block
+- Hero background image (Atlanta 2022 action shot) with dark overlay for legibility; headshot 2023 added to media kit headshots grid and gallery
+- Hero `h1` styled with solid brand yellow and hard brand-pink drop shadow (no blur)
+- Calgary 2023 and Interfusion 2022 action shots added to media kit gallery
+- Media kit overhauled: disclaimer paragraph, Bio section, Socials list (inline with pipe separators, platform-colored names), Media section with Headshots and Gallery subsections; Contact & Payment section removed
+
+### Changed
+
+- Hero is now full-bleed (spans full viewport width, flush with nav) with bottom margin separating it from Featured Events
+- Hero `h1` uses solid brand yellow instead of the gradient applied to the nav logo
+- Hero button hover lightens via `brightness` instead of fading opacity; outline button border set to white
+- Tagline updated to "Delivering electric, genre-bending, Brazilian Zouk mixes since 2020."
 
 ## [0.1.0] - 2026-04-03
 
