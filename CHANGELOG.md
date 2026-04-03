@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-04-03
+
 ### Added
 
 - `src/_data/milestones.json` — new data file for career milestones (2020–2024) separated from events, covering DJ debut, certifications, Mixcloud growth, and first regional/international performances
