@@ -6,9 +6,13 @@ body {
 }
 
 main {
-  max-width: var(--max-width);
+  max-width: var(--max-width-prose);
   margin: 0 auto;
   padding: var(--space-8) var(--space-4);
+}
+
+main.wide {
+  max-width: var(--max-width);
 }
 
 h1,

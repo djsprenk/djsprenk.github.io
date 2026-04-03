@@ -57,7 +57,7 @@
       </nav>
     </header>
 
-    <main>{{ content | safe }}</main>
+    <main{% if wideLayout %} class="wide"{% endif %}>{{ content | safe }}</main>
 
     <footer>
       <ul class="footer-social">

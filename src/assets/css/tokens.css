@@ -43,5 +43,6 @@
 
   /* Layout */
   --max-width: 1100px;
+  --max-width-prose: 760px;
   --radius: 4px;
 }
