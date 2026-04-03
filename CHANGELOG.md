@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `previousEventsByYear` Eleventy filter in `.eleventy.js` to group and sort past events by year descending, with events within each year sorted most-recent-first
 - URLs for known event organizers across multiple entries: Interfusion Festival, Zouk Heat, RVA Zouk Movement, BraZouky, Zouk Conexão, Zouk Pirates, Havana Club Social, Fuego y Candela
 - Social and payment platform brand color tokens in `tokens.css` (`--color-mixcloud`, `--color-soundcloud`, `--color-instagram`, `--color-facebook`, `--color-patreon`, `--color-venmo`, `--color-paypal`) and global `a[href*="…"]` rules in `base.css` so any link to these platforms is automatically colored site-wide
+- Add version command
 
 ### Changed
 
