@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Interfusion Festival",
+    "startDate": "2025-01-09",
+    "endDate": "2025-01-12",
+    "location": "Arlington, VA",
+    "status": "upcoming"
+  },
+  {
+    "name": "RVA Zouk Movement Weekender Hybrid 2025",
+    "startDate": "2025-01-30",
+    "endDate": "2025-02-03",
+    "location": "Richmond, VA",
+    "status": "upcoming"
+  },
+  {
+    "name": "NY SBKZ Congress",
+    "startDate": "2025-02-07",
+    "endDate": "2025-02-09",
+    "location": "New York, NY",
+    "url": "https://nysbkzcongress.com",
+    "status": "upcoming",
+    "featured": true
+  },
+  {
+    "name": "Honolulu Zouk Marathon",
+    "startDate": "2025-03-21",
+    "endDate": "2025-03-24",
+    "location": "Honolulu, HI",
+    "status": "upcoming",
+    "featured": true
+  },
+  {
+    "name": "Zouk Heat",
+    "startDate": "2025-04-03",
+    "endDate": "2025-04-07",
+    "location": "Herndon, VA",
+    "status": "upcoming"
+  },
+  {
+    "name": "Mind, Movement, Magic",
+    "startDate": "2025-05-21",
+    "endDate": "2025-05-26",
+    "location": "Loveland, CO",
+    "status": "upcoming",
+    "featured": true
+  },
+  {
+    "name": "Zouk Pirates Weekender with Marck & Melyssa",
+    "startDate": "2025-05-30",
+    "endDate": "2025-06-01",
+    "location": "Boston, MA",
+    "status": "upcoming"
+  },
+  {
+    "name": "Zouk Diverse Marathon",
+    "startDate": "2025-07-17",
+    "endDate": "2025-07-21",
+    "location": "Gdańsk, Poland",
+    "status": "upcoming"
+  },
+  {
+    "name": "Zouk Pirates Weekender with Leandro & Nayara",
+    "startDate": "2025-09-19",
+    "endDate": "2025-09-21",
+    "location": "Boston, MA",
+    "status": "upcoming"
+  },
+  {
+    "name": "DJ Debut",
+    "startDate": "2021-01-01",
+    "location": "Boston, MA",
+    "status": "previous",
+    "note": "First DJ performance"
+  },
+  {
+    "name": "Interfusion Festival",
+    "startDate": "2022-01-01",
+    "location": "Arlington, VA",
+    "status": "previous"
+  },
+  {
+    "name": "RVA Zouk Movement",
+    "startDate": "2022-01-01",
+    "location": "Richmond, VA",
+    "status": "previous"
+  },
+  {
+    "name": "Zouk Conexão",
+    "startDate": "2023-01-01",
+    "location": "USA",
+    "status": "previous"
+  },
+  {
+    "name": "NYC Zouk Festival",
+    "startDate": "2023-01-01",
+    "location": "New York, NY",
+    "status": "previous"
+  },
+  {
+    "name": "Eclipse Zouk Marathon",
+    "startDate": "2024-01-01",
+    "location": "USA",
+    "status": "previous"
+  }
+]

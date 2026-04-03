@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+title: Previous Events
+---
+
+<h1>Previous Events</h1>
+
+<ul class="event-list">
+  {% for event in events %} {% if event.status === "previous" %}
+  <li class="event-item">
+    <span class="event-item-name"> {{ event.name }} {% if event.note %}<em> — {{ event.note }}</em>{% endif %} </span>
+    <span class="event-item-meta">{{ event.location }}</span>
+  </li>
+  {% endif %} {% endfor %}
+</ul>
+
+<h2>Milestones</h2>
+<ul class="event-list">
+  <li class="event-item">
+    <span class="event-item-name">DJ Debut</span>
+    <span class="event-item-meta">Boston, MA — 2021</span>
+  </li>
+  <li class="event-item">
+    <span class="event-item-name">3 million minutes of listening time on Mixcloud</span>
+    <span class="event-item-meta">2024</span>
+  </li>
+  <li class="event-item">
+    <span class="event-item-name">1,000+ followers and 100,000+ listens on Mixcloud</span>
+    <span class="event-item-meta">2024</span>
+  </li>
+</ul>
+
+<p><a href="/events/upcoming">View upcoming events &rarr;</a></p>

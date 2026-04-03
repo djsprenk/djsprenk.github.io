@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: Services
+---
+
+<h1>Services</h1>
+
+<ul class="service-list">
+  {% for service in services %}
+  <li class="service-item">
+    <h2>{{ service.name }}</h2>
+    <p>{{ service.description }}</p>
+  </li>
+  {% endfor %}
+</ul>
+
+<p>Contact for pricing and availability.</p>
+<a href="/contact" class="btn btn-primary">Get in touch</a>

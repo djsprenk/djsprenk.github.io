@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: Upcoming Events
+---
+
+<h1>Upcoming Events</h1>
+
+<ul class="event-list">
+  {% for event in events %} {% if event.status === "upcoming" %}
+  <li class="event-item">
+    <span class="event-item-name">{{ event.name }}</span>
+    <span class="event-item-meta">
+      {{ event.location }} &mdash; {{ event.startDate }} – {{ event.endDate }} {% if event.url %} ·
+      <a href="{{ event.url }}" target="_blank" rel="noopener">Details</a>
+      {% endif %}
+    </span>
+  </li>
+  {% endif %} {% endfor %}
+</ul>
+
+<p>More events to be announced.</p>
+<p><a href="/events/previous">View past events &rarr;</a></p>

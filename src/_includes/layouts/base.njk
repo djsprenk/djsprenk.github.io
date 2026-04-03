@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if title %}{{ title }} – {% endif %}DJ Sprenk</title>
+    <link rel="stylesheet" href="/assets/css/tokens.css" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/components/hero.css" />
+    <link rel="stylesheet" href="/assets/css/components/cards.css" />
+    <link rel="stylesheet" href="/assets/css/components/forms.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/" class="nav-logo">DJ Sprenk</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li class="has-submenu">
+            <a href="/about">About</a>
+            <ul class="submenu">
+              <li><a href="/about">About</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/music-policies">Music Policies</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#" aria-haspopup="true">Music</a>
+            <ul class="submenu">
+              <li><a href="https://www.mixcloud.com/djsprenk" target="_blank" rel="noopener">Mixcloud</a></li>
+              <li><a href="https://soundcloud.com/djsprenk" target="_blank" rel="noopener">SoundCloud</a></li>
+            </ul>
+          </li>
+          <li><a href="/courses">Courses</a></li>
+          <li class="has-submenu">
+            <a href="/events/upcoming">Events</a>
+            <ul class="submenu">
+              <li><a href="/events/upcoming">Upcoming</a></li>
+              <li><a href="/events/previous">Previous</a></li>
+            </ul>
+          </li>
+          <li><a href="/media-kit">Media Kit</a></li>
+          <li class="has-submenu">
+            <a href="/contact">Contact</a>
+            <ul class="submenu">
+              <li><a href="/contact">Message Me</a></li>
+              <li><a href="/feedback">Submit Feedback</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>{{ content | safe }}</main>
+
+    <footer>
+      <ul class="footer-social">
+        <li><a href="https://www.mixcloud.com/djsprenk" target="_blank" rel="noopener">Mixcloud</a></li>
+        <li><a href="https://soundcloud.com/djsprenk" target="_blank" rel="noopener">SoundCloud</a></li>
+        <li><a href="https://instagram.com/djsprenk" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://facebook.com/djsprenk" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://patreon.com/DJSprenk" target="_blank" rel="noopener">Patreon</a></li>
+      </ul>
+      <p>&copy; {% year %} DJ Sprenk</p>
+    </footer>
+
+    <script src="/assets/js/nav.js"></script>
+  </body>
+</html>
