@@ -194,17 +194,35 @@
 .timeline-event::before {
   content: '';
   position: absolute;
-  left: calc(-1 * var(--space-8) - 3px);
+  left: calc(-1 * var(--space-8) - 5px);
   top: 50%;
   transform: translateY(-50%);
   width: 8px;
-  height: 2px;
-  background: var(--color-border);
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
 }
 
 .timeline-event-name {
   font-weight: 600;
   flex: 1;
+}
+
+.timeline-event-name em {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--color-brand-yellow);
+}
+
+.timeline-event-name a[href*="facebook"],
+.timeline-event-name a[href*="instagram"],
+.timeline-event-name a[href*="mixcloud"],
+.timeline-event-name a[href*="soundcloud"],
+.timeline-event-name a[href*="patreon"],
+.timeline-event-name a[href*="venmo"],
+.timeline-event-name a[href*="paypal"] {
+  color: inherit;
 }
 
 .timeline-event-meta {
@@ -290,6 +308,15 @@
   }
 
   .event-item-meta {
+    white-space: normal;
+  }
+
+  .timeline-event {
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .timeline-event-meta {
     white-space: normal;
   }
 }

@@ -21,7 +21,7 @@ title: Previous Events
     <ul class="timeline-events">
       {% for event in group.events %}
       <li class="timeline-event">
-        <span class="timeline-event-name">{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.name }}</a>{% else %}{{ event.name }}{% endif %}{% if event.note %} <em>— {{ event.note }}</em>{% endif %}</span>
+        <span class="timeline-event-name">{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.name }}</a>{% else %}{{ event.name }}{% endif %}{% if event.note %} <em>· {{ event.note }}</em>{% endif %}</span>
         <span class="timeline-event-meta">{{ event.location }}</span>
       </li>
       {% endfor %}
