@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- `docs/wishlist.md` — feature checklist for tracking planned site improvements
+- `text-transform: uppercase` on headings and nav logo to avoid a broken lowercase `n` glyph in the Brick Riot font
+- `/version` slash command at `.claude/commands/version.md` for bumping semver, updating `package.json`/`package-lock.json`, and promoting `[Unreleased]` changelog entries to a dated release block
+
 ## [0.1.0] - 2026-04-03
 
 ### Added
