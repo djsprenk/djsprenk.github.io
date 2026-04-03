@@ -8,6 +8,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- `src/_data/milestones.json` — new data file for career milestones (2020–2024) separated from events, covering DJ debut, certifications, Mixcloud growth, and first regional/international performances
+- Full past events list in `src/_data/events.json` scraped verbatim from djsprenk.com, covering 2021–2025 with ~58 entries across all years; all 2025 events moved from upcoming to previous since they have passed
+- `previousEventsByYear` Eleventy filter in `.eleventy.js` to group and sort past events by year descending, with events within each year sorted most-recent-first
+- URLs for known event organizers across multiple entries: Interfusion Festival, Zouk Heat, RVA Zouk Movement, BraZouky, Zouk Conexão, Zouk Pirates, Havana Club Social, Fuego y Candela
+
+### Changed
+
+- `src/events/previous.njk` — past events now grouped under `<h2>` year headers (2025 → 2021) with events sorted most-recent-first within each year; milestones section now driven by `milestones.json` instead of hardcoded HTML
+- `src/events/upcoming.njk` — event name rendered as a link when a `url` field is present, replacing the separate "Details" link
+- `src/events/previous.njk` — event names rendered as links when a `url` field is present
+
 - `CLAUDE.md` — guidance file for Claude Code covering commands, architecture,
   data files, CSS token system, Formspree placeholders, and SSH remote setup
 - `/changelog` slash command at `.claude/commands/changelog.md` for adding

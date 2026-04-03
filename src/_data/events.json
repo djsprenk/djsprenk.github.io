@@ -3,104 +3,390 @@
     "name": "Interfusion Festival",
     "startDate": "2025-01-09",
     "endDate": "2025-01-12",
-    "location": "Arlington, VA",
-    "status": "upcoming"
+    "location": "Arlington, VA, USA",
+    "url": "https://interfusionfestival.com/",
+    "status": "previous"
   },
   {
     "name": "RVA Zouk Movement Weekender Hybrid 2025",
     "startDate": "2025-01-30",
     "endDate": "2025-02-03",
-    "location": "Richmond, VA",
-    "status": "upcoming"
+    "location": "Richmond, VA, USA",
+    "url": "https://rvazoukmovement.com/",
+    "status": "previous"
   },
   {
     "name": "NY SBKZ Congress",
     "startDate": "2025-02-07",
     "endDate": "2025-02-09",
-    "location": "New York, NY",
+    "location": "NY, NY, USA",
     "url": "https://nysbkzcongress.com",
-    "status": "upcoming",
+    "status": "previous",
     "featured": true
   },
   {
     "name": "Honolulu Zouk Marathon",
     "startDate": "2025-03-21",
     "endDate": "2025-03-24",
-    "location": "Honolulu, HI",
-    "status": "upcoming",
+    "location": "Honolulu, HI, USA",
+    "status": "previous",
     "featured": true
   },
   {
     "name": "Zouk Heat",
     "startDate": "2025-04-03",
     "endDate": "2025-04-07",
-    "location": "Herndon, VA",
-    "status": "upcoming"
+    "location": "Herndon, VA, USA",
+    "url": "https://zoukheat.com/",
+    "status": "previous"
   },
   {
     "name": "Mind, Movement, Magic",
     "startDate": "2025-05-21",
     "endDate": "2025-05-26",
-    "location": "Loveland, CO",
-    "status": "upcoming",
+    "location": "Loveland, CO, USA",
+    "status": "previous",
     "featured": true
   },
   {
     "name": "Zouk Pirates Weekender with Marck & Melyssa",
     "startDate": "2025-05-30",
     "endDate": "2025-06-01",
-    "location": "Boston, MA",
-    "status": "upcoming"
+    "location": "Boston, MA, USA",
+    "url": "https://zouk-pirates.com/",
+    "status": "previous"
   },
   {
     "name": "Zouk Diverse Marathon",
     "startDate": "2025-07-17",
     "endDate": "2025-07-21",
     "location": "Gdańsk, Poland",
-    "status": "upcoming"
+    "status": "previous"
   },
   {
     "name": "Zouk Pirates Weekender with Leandro & Nayara",
     "startDate": "2025-09-19",
     "endDate": "2025-09-21",
+    "location": "Boston, MA, USA",
+    "url": "https://zouk-pirates.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Leandro & Nayara Brazilian Zouk Weekender in Boston",
+    "startDate": "2024-01-01",
     "location": "Boston, MA",
-    "status": "upcoming"
+    "url": "https://www.zouk-pirates.com/",
+    "status": "previous"
   },
   {
-    "name": "DJ Debut",
-    "startDate": "2021-01-01",
+    "name": "BraZouky USA",
+    "startDate": "2024-01-01",
+    "location": "DC",
+    "url": "https://www.brazouky.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Zouk Conexão Festival",
+    "startDate": "2024-01-01",
+    "location": "Atlanta, GA",
+    "url": "https://zoukconexao.com/",
+    "status": "previous"
+  },
+  {
+    "name": "NYC Zouk Festival 2024",
+    "startDate": "2024-01-01",
+    "location": "NYC, NY",
+    "status": "previous"
+  },
+  {
+    "name": "NYC Senior Zouk Social",
+    "startDate": "2024-01-01",
+    "location": "NYC, NY",
+    "status": "previous"
+  },
+  {
+    "name": "PHX Zouk & Lambada Summer Party with Iago & Vanessa",
+    "startDate": "2024-01-01",
+    "location": "Phoenix, AZ",
+    "status": "previous"
+  },
+  {
+    "name": "Alisson & Bryn Brazilian Zouk Weekender",
+    "startDate": "2024-01-01",
     "location": "Boston, MA",
-    "status": "previous",
-    "note": "First DJ performance"
-  },
-  {
-    "name": "Interfusion Festival",
-    "startDate": "2022-01-01",
-    "location": "Arlington, VA",
+    "url": "https://www.zouk-pirates.com/",
     "status": "previous"
   },
   {
-    "name": "RVA Zouk Movement",
-    "startDate": "2022-01-01",
-    "location": "Richmond, VA",
+    "name": "Zouk Heat",
+    "startDate": "2024-01-01",
+    "location": "Herndon, VA",
+    "url": "https://zoukheat.com/",
     "status": "previous"
   },
   {
-    "name": "Zouk Conexão",
-    "startDate": "2023-01-01",
-    "location": "USA",
-    "status": "previous"
-  },
-  {
-    "name": "NYC Zouk Festival",
-    "startDate": "2023-01-01",
-    "location": "New York, NY",
+    "name": "Shangri-La St. Patrick's Day Party",
+    "startDate": "2024-01-01",
+    "location": "Temple Hills, MD",
     "status": "previous"
   },
   {
     "name": "Eclipse Zouk Marathon",
     "startDate": "2024-01-01",
-    "location": "USA",
+    "location": "Portland, OR",
     "status": "previous"
+  },
+  {
+    "name": "New York SBKZ Congress",
+    "startDate": "2024-01-01",
+    "location": "NY, NY",
+    "status": "previous"
+  },
+  {
+    "name": "RVA Zouk Movement Weekender Hybrid",
+    "startDate": "2024-01-01",
+    "location": "Richmond, VA",
+    "url": "https://rvazoukmovement.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Interfusion Festival",
+    "startDate": "2024-01-01",
+    "location": "Arlington, VA",
+    "url": "https://interfusionfestival.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Marck & Melyssa Brazilian Zouk Weekender",
+    "startDate": "2024-01-01",
+    "location": "Boston, MA",
+    "url": "https://www.zouk-pirates.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Omni-versary 2.0",
+    "startDate": "2023-01-01",
+    "location": "Oakland, CA",
+    "status": "previous"
+  },
+  {
+    "name": "BraZoukynho USA",
+    "startDate": "2023-01-01",
+    "location": "Washington, DC",
+    "url": "https://www.brazouky.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Zouk Conexão Festival (Level Up)",
+    "startDate": "2023-01-01",
+    "location": "Atlanta, GA",
+    "url": "https://zoukconexao.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Julie Rozen Brazilian Zouk Weekender",
+    "startDate": "2023-01-01",
+    "location": "Boston, MA",
+    "status": "previous"
+  },
+  {
+    "name": "Havana Club Social",
+    "startDate": "2023-01-01",
+    "location": "Boston, MA",
+    "url": "https://www.havanaclubsalsa.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Jeremy Hale Anatomy of Comfort Weekend",
+    "startDate": "2023-01-01",
+    "location": "Boston, MA and Minneapolis, MN",
+    "url": "https://www.zouk-pirates.com/",
+    "status": "previous"
+  },
+  {
+    "name": "NC Zoukfest Weekender",
+    "startDate": "2023-01-01",
+    "location": "Morrisville, NC",
+    "status": "previous"
+  },
+  {
+    "name": "Zouk Pirates Anniversary",
+    "startDate": "2023-01-01",
+    "location": "Boston, MA",
+    "url": "https://zouk-pirates.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Unity Social – Silent Party",
+    "startDate": "2023-01-01",
+    "location": "Boston, MA",
+    "status": "previous"
+  },
+  {
+    "name": "DC Zouk & Bachata Festival 2023",
+    "startDate": "2023-01-01",
+    "location": "Baltimore, MD",
+    "status": "previous"
+  },
+  {
+    "name": "Iowa Zouk Weekender with Elena the Rhinestone",
+    "startDate": "2023-01-01",
+    "location": "Iowa City, IA",
+    "status": "previous"
+  },
+  {
+    "name": "Zouk Pirates Starboard Social",
+    "startDate": "2023-01-01",
+    "location": "Boston, MA",
+    "url": "https://www.zouk-pirates.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Senior Social",
+    "startDate": "2023-01-01",
+    "location": "New York, NY",
+    "status": "previous"
+  },
+  {
+    "name": "Denver Zouk Marathon",
+    "startDate": "2023-01-01",
+    "location": "Denver, CO",
+    "status": "previous"
+  },
+  {
+    "name": "Bruno & Raiza Zouk Mini Marathon",
+    "startDate": "2023-01-01",
+    "location": "Calgary, AB, Canada",
+    "status": "previous"
+  },
+  {
+    "name": "RVA Zouk Movement Anniversary",
+    "startDate": "2023-01-01",
+    "location": "Richmond, VA",
+    "url": "https://rvazoukmovement.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Zouk Conexáo Festival",
+    "startDate": "2022-01-01",
+    "location": "Atlanta, GA",
+    "url": "https://zoukconexao.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Boston International Zouk Festival",
+    "startDate": "2022-01-01",
+    "location": "Boston, MA",
+    "status": "previous"
+  },
+  {
+    "name": "Kakah & Julissa Brazilian Zouk Weekender",
+    "startDate": "2022-01-01",
+    "location": "Boston, MA",
+    "status": "previous"
+  },
+  {
+    "name": "Richmond Rendezvous Weekender",
+    "startDate": "2022-01-01",
+    "location": "Richmond, VA",
+    "url": "https://rvazoukmovement.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Boston Leader Intensive Training with Gui Prada",
+    "startDate": "2022-01-01",
+    "location": "Boston, MA",
+    "url": "https://www.zouk-pirates.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Bliss Fusion Festival",
+    "startDate": "2022-01-01",
+    "location": "Boston, MA",
+    "status": "previous"
+  },
+  {
+    "name": "Alisson Sandi & Bryn Nugent Brazilian Zouk Weekender",
+    "startDate": "2022-01-01",
+    "location": "Boston, MA",
+    "url": "https://www.zouk-pirates.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Zen Zouk Weekender",
+    "startDate": "2022-01-01",
+    "location": "New York, NY",
+    "status": "previous"
+  },
+  {
+    "name": "Senior Social",
+    "startDate": "2022-01-01",
+    "location": "New York, NY",
+    "status": "previous"
+  },
+  {
+    "name": "Solas Social",
+    "startDate": "2022-01-01",
+    "location": "New York, NY",
+    "status": "previous"
+  },
+  {
+    "name": "Zoukphoria Social",
+    "startDate": "2022-01-01",
+    "location": "Brooklyn, NY",
+    "status": "previous"
+  },
+  {
+    "name": "Starboard Social",
+    "startDate": "2022-01-01",
+    "location": "Boston, MA",
+    "url": "https://www.zouk-pirates.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Fuego y Candela Social",
+    "startDate": "2022-01-01",
+    "location": "Boston, MA",
+    "url": "https://www.facebook.com/FuegoyCandelaSalsa/",
+    "status": "previous"
+  },
+  {
+    "name": "Be ONE Zouk Social",
+    "startDate": "2022-01-01",
+    "location": "Boston, MA",
+    "status": "previous"
+  },
+  {
+    "name": "Igor Fraga Brazilian Zouk Weekender",
+    "startDate": "2021-01-01",
+    "location": "Boston, MA",
+    "url": "https://www.zouk-pirates.com/",
+    "status": "previous"
+  },
+  {
+    "name": "Be ONE Zouk Social",
+    "startDate": "2021-01-01",
+    "location": "Boston, MA",
+    "status": "previous"
+  },
+  {
+    "name": "Zoukchata Social",
+    "startDate": "2021-01-01",
+    "location": "Boston, MA",
+    "status": "previous"
+  },
+  {
+    "name": "Zouk & Art Social",
+    "startDate": "2021-01-01",
+    "location": "Boston, MA",
+    "status": "previous"
+  },
+  {
+    "name": "Havana Club Social",
+    "startDate": "2021-01-01",
+    "location": "Boston, MA",
+    "url": "https://www.havanaclubsalsa.com/",
+    "status": "previous",
+    "note": "DJ debut — performed 6 times"
   }
 ]
