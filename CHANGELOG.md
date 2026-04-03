@@ -16,6 +16,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Milestone wording: "First international DJ performance" → "First outside-US performance" (2022); "First West Coast DJ performance" → "First event on the West Coast" (2023)
 - Standalone Milestones section removed from previous events page — achievements now appear inline in the timeline
+- `events.json` data quality pass: fixed 3 out-of-order entries (Boston International Zouk Festival, Zoukchata Social, Julie Rozen Weekender), standardized recurring event names (NY SBKZ Congress, Zouk Pirates Weekender series, YYC Zouk Marathon), and normalized inconsistent URLs (Zouk Pirates www prefix, trailing slashes, Zouk Heat path)
+- Timeline event dots changed from grey horizontal ticks to white circles with a border, matching the year-label dot style
+- Both event pages now stack to a single column on small screens, with location beneath the event title
+- Timeline event notes styled in brand yellow with a `·` separator instead of an em dash
 
 ## [0.2.0] - 2026-04-03
 
