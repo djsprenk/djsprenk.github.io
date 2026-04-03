@@ -69,6 +69,7 @@
     "endDate": "2025-07-21",
     "location": "Gdańsk, Poland",
     "url": "https://zoukdiverse.com/",
+    "note": "First performance outside of North America",
     "status": "previous"
   },
   {
@@ -199,6 +200,7 @@
     "endDate": "2024-03-16",
     "location": "Temple Hills, MD, USA",
     "url": "https://www.facebook.com/events/1104644440959776",
+    "note": "My longest set to date, 4 hours!",
     "status": "previous"
   },
   {
@@ -255,6 +257,7 @@
     "endDate": "2023-12-10",
     "location": "Oakland, CA, USA",
     "url": "https://www.theomnimovement.org/weekenders",
+    "note": "First event on the West Coast",
     "status": "previous"
   },
   {
@@ -593,6 +596,7 @@
     "startDate": "2022-06-10",
     "endDate": "2022-06-12",
     "location": "Calgary, AB, Canada",
+    "note": "First international performance",
     "status": "previous"
   },
   {
@@ -725,6 +729,7 @@
     "endDate": "2021-11-21",
     "location": "Boston, MA, USA",
     "url": "https://www.zouk-pirates.com/",
+    "note": "First weekender",
     "status": "previous"
   },
   {
