@@ -12,6 +12,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   data files, CSS token system, Formspree placeholders, and SSH remote setup
 - `/changelog` slash command at `.claude/commands/changelog.md` for adding
   changelog entries consistently
+- Brick Riot custom font (`BrickRiotRegular.ttf`) applied to the nav logo only
+  via `src/assets/css/fonts.css`
 
 ## [0.0.0] - 2026-04-02
 

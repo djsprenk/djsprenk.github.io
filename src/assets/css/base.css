@@ -60,7 +60,7 @@ header {
 }
 
 .nav-logo {
-  font-family: var(--font-display);
+  font-family: 'Brick Riot', Georgia, serif;
   font-size: var(--text-xl);
   text-decoration: none;
   font-weight: bold;
