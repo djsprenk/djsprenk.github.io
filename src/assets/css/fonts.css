@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'Brick Riot';
-  src: url('/assets/fonts/BrickRiotRegular.ttf') format('truetype');
+  src:
+    url('/assets/fonts/BrickRiotRegular.woff2') format('woff2'),
+    url('/assets/fonts/BrickRiotRegular.woff') format('woff'),
+    url('/assets/fonts/BrickRiotRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

@@ -1,6 +1,10 @@
 :root {
+  /* Brand */
+  --color-brand-pink: #b82b5a;
+  --color-brand-yellow: #fdf38a;
+
   /* Colors */
-  --color-primary: #7c3aed;
+  --color-primary: #b82b5a;
   --color-bg: #0f0f0f;
   --color-surface: #1a1a1a;
   --color-text: #f0f0f0;

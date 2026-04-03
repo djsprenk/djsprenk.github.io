@@ -59,8 +59,27 @@ header {
   border-bottom: 1px solid var(--color-border);
 }
 
-.nav-logo {
+.brand-text {
   font-family: 'Brick Riot', Georgia, serif;
+  background: linear-gradient(
+    to right,
+    var(--color-brand-pink),
+    var(--color-brand-yellow),
+    var(--color-brand-pink)
+  );
+  background-size: 200% 100%;
+  background-position: 0% center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: background-position 0.4s ease;
+}
+
+.brand-text:hover {
+  background-position: 100% center;
+}
+
+.nav-logo {
   font-size: var(--text-xl);
   text-decoration: none;
   font-weight: bold;
@@ -71,6 +90,7 @@ header {
   gap: var(--space-6);
   align-items: center;
 }
+
 
 .nav-links a {
   text-decoration: none;
