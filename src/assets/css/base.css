@@ -211,6 +211,14 @@ footer p {
   margin-bottom: 0;
 }
 
+/* About page */
+.about-headshot {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: var(--space-6);
+  filter: url(#duotone-brand);
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .nav-toggle {

@@ -6,11 +6,33 @@ title: About
 <h1>About DJ Sprenk</h1>
 
 <section>
+  <p>Hey 👋 It’s DJ Sprenk!</p>
+</section>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="duotone-brand" x="0" y="0" width="100%" height="100%">
+      <feColorMatrix type="saturate" values="0" result="gray"/>
+      <feFlood result="flood-highlight" style="flood-color: var(--color-brand-yellow)"/>
+      <feBlend in="flood-highlight" in2="gray" mode="multiply" result="highlights"/>
+      <feFlood result="flood-shadow" style="flood-color: var(--color-brand-pink)"/>
+      <feBlend in="flood-shadow" in2="highlights" mode="screen"/>
+    </filter>
+  </defs>
+</svg>
+
+<img
+  src="https://res.cloudinary.com/damf0mchl/image/upload/sprenk_headshot_2023_1.jpg"
+  alt="DJ Sprenk headshot 2023"
+  class="about-headshot"
+/>
+
+<section>
   <h2>Background & Expertise</h2>
   <p>
     DJ Sprenk is a Brazilian Zouk DJ based out of Cambridge, MA, USA, known for musicality and energetic flow. With a
-    background in piano, vocals, and musical arrangements, the approach to DJing is deeply rooted in music theory and
-    emotional storytelling.
+    background in performing and arranging music, their approach to DJing is deeply rooted in music theory and emotional
+    storytelling.
   </p>
 </section>
 
@@ -32,8 +54,3 @@ title: About
   </p>
   <p>Personal interests include technology, design, storytelling, and education.</p>
 </section>
-
-<nav aria-label="Related pages">
-  <a href="/services">Services</a> · <a href="/courses">Courses</a> ·
-  <a href="/contact">Contact</a>
-</nav>
