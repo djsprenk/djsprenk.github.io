@@ -43,6 +43,13 @@ p {
   margin-bottom: var(--space-4);
 }
 
+main ol,
+main ul:not([class]) {
+  list-style: revert;
+  padding-left: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+
 a {
   text-decoration: underline;
 }
