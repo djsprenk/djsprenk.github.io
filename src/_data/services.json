@@ -1,7 +1,7 @@
 [
   {
-    "name": "Live DJ Performance",
-    "description": "High-energy Brazilian Zouk sets tailored to your event's vibe and audience."
+    "name": "DJ Performance",
+    "description": "Immaculate Brazilian Zouk sets tailored to your event's vibe and audience."
   },
   {
     "name": "Custom Sets",
@@ -9,18 +9,14 @@
   },
   {
     "name": "Jack & Jill DJing",
-    "description": "BZDC Certified specialist for Jack & Jill competitions — precise timing, clear musical phrasing."
+    "description": "<a href=\"https://www.brazilianzoukcouncil.com/registered-bzdc-jack-and-jill-deejays/\" target=\"_blank\" rel=\"noopener\">BZDC Certified Jack &amp; Jill DJ</a>. No more DJs playing songs in 3/4."
   },
   {
-    "name": "Remote DJing",
-    "description": "Professional DJ sets delivered remotely for virtual events and hybrid festivals."
+    "name": "Set Downloads",
+    "description": "License recorded sets for socials, práticas, and small events. See <a href=\"/music-policies\">Music Policies</a> for details."
   },
   {
-    "name": "Set Downloads / License",
-    "description": "License recorded sets for classes, práticas, or events. See Music Policies for details."
-  },
-  {
-    "name": "DJ Classes",
-    "description": "One-on-one and group instruction covering music theory, transitions, and energy management for Zouk DJs."
+    "name": "DJ Coaching & Classes",
+    "description": "One-on-one and group instruction covering music theory, mixing, and energy management for Zouk DJs."
   }
 ]
