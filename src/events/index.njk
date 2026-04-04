@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+title: Events
+---
+
+<h1>Events</h1>
+
+<h2>Upcoming</h2>
+<ul class="card-grid">
+  {% for event in events | reverse %} {% if event.status === "upcoming" %}
+  <li class="card">
+    <p class="card-date">{{ event.startDate }}{% if event.endDate %} – {{ event.endDate }}{% endif %}</p>
+    <h3 class="card-title">{{ event.name }}</h3>
+    <p class="card-location">{{ event.location }}</p>
+    {% if event.url %}
+    <a href="{{ event.url }}" class="card-link" target="_blank" rel="noopener">Details &rarr;</a>
+    {% endif %}
+  </li>
+  {% endif %} {% endfor %}
+</ul>
+
+<h2>Previous</h2>
+{% set milestonesByYear = milestones | indexByYear %}
+<div class="timeline">
+  {% for group in events | previousEventsByYear %}
+  {% set yearMilestone = milestonesByYear[group.year] %}
+  <div class="timeline-year">
+    <div class="timeline-year-label">{{ group.year }}</div>
+    {% if yearMilestone %}
+    <ul class="timeline-achievements">
+      {% for achievement in yearMilestone.achievements %}
+      <li class="timeline-achievement">{{ achievement }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <ul class="timeline-events">
+      {% for event in group.events %}
+      <li class="timeline-event">
+        <span class="timeline-event-name">{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.name }}</a>{% else %}{{ event.name }}{% endif %}{% if event.note %} <em>· {{ event.note }}</em>{% endif %}</span>
+        <span class="timeline-event-meta">{{ event.location }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>

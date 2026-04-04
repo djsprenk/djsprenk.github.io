@@ -16,7 +16,7 @@ wideLayout: true
 <section class="section">
   <h2>Upcoming Events</h2>
   <ul class="card-grid">
-    {% for event in events %} {% if event.status === "upcoming" %}
+    {% for event in events | reverse %} {% if event.status === "upcoming" %}
     <li class="card">
       <p class="card-date">{{ event.startDate }}{% if event.endDate %} – {{ event.endDate }}{% endif %}</p>
       <h3 class="card-title">{{ event.name }}</h3>
@@ -27,5 +27,5 @@ wideLayout: true
     </li>
     {% endif %} {% endfor %}
   </ul>
-  <p><a href="/events/upcoming">See all upcoming events &rarr;</a></p>
+  <p><a href="/events">See all events &rarr;</a></p>
 </section>
