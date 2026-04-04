@@ -9,7 +9,7 @@ title: Services
   {% for service in services %}
   <li class="service-item">
     <h2>{{ service.name }}</h2>
-    <p>{{ service.description }}</p>
+    <p>{{ service.description | safe }}</p>
   </li>
   {% endfor %}
 </ul>
