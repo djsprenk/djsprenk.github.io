@@ -215,15 +215,6 @@
   color: var(--color-brand-yellow);
 }
 
-.timeline-event-name a[href*="facebook"],
-.timeline-event-name a[href*="instagram"],
-.timeline-event-name a[href*="mixcloud"],
-.timeline-event-name a[href*="soundcloud"],
-.timeline-event-name a[href*="patreon"],
-.timeline-event-name a[href*="venmo"],
-.timeline-event-name a[href*="paypal"] {
-  color: inherit;
-}
 
 .timeline-event-meta {
   font-size: var(--text-sm);

@@ -181,26 +181,29 @@ footer {
   transition: color 0.2s ease;
 }
 
-a[href*="mixcloud"]   { color: var(--color-mixcloud); }
-a[href*="soundcloud"] { color: var(--color-soundcloud); }
-a[href*="instagram"]  { color: var(--color-instagram); }
-a[href*="facebook"]   { color: var(--color-facebook); }
-a[href*="patreon"]    { color: var(--color-patreon); }
-a[href*="venmo"]      { color: var(--color-venmo); }
-a[href*="paypal"]     { color: var(--color-paypal); }
+.footer-social a[href*="mixcloud"],
+.social-list a[href*="mixcloud"]   { color: var(--color-mixcloud); }
 
-a[href*="mixcloud"]:hover,
-a[href*="soundcloud"]:hover,
-a[href*="instagram"]:hover,
-a[href*="facebook"]:hover,
-a[href*="patreon"]:hover,
-a[href*="venmo"]:hover,
-a[href*="paypal"]:hover {
-  filter: brightness(1.2);
-  color: inherit;
-}
+.footer-social a[href*="soundcloud"],
+.social-list a[href*="soundcloud"] { color: var(--color-soundcloud); }
 
-.footer-social a:hover {
+.footer-social a[href*="instagram"],
+.social-list a[href*="instagram"]  { color: var(--color-instagram); }
+
+.footer-social a[href*="facebook"],
+.social-list a[href*="facebook"]   { color: var(--color-facebook); }
+
+.footer-social a[href*="patreon"],
+.social-list a[href*="patreon"]    { color: var(--color-patreon); }
+
+.footer-social a[href*="venmo"],
+.social-list a[href*="venmo"]      { color: var(--color-venmo); }
+
+.footer-social a[href*="paypal"],
+.social-list a[href*="paypal"]     { color: var(--color-paypal); }
+
+.footer-social a:hover,
+.social-list a:hover {
   filter: brightness(1.2);
 }
 
