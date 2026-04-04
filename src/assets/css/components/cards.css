@@ -115,7 +115,6 @@
   font-weight: 600;
 }
 
-
 /* Timeline */
 .timeline {
   position: relative;
@@ -210,7 +209,6 @@
   font-weight: 400;
   color: var(--color-brand-yellow);
 }
-
 
 .timeline-event-meta {
   font-size: var(--text-sm);

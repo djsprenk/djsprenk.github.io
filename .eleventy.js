@@ -4,11 +4,15 @@ module.exports = function (eleventyConfig) {
 
   // Filters
   const today = new Date().toISOString().slice(0, 10);
-  const isPrevious = (e) => e.status !== 'hidden' && (e.endDate ?? e.startDate) < today;
-  const isUpcoming = (e) => e.status !== 'hidden' && (e.endDate ?? e.startDate) >= today;
+  const isPrevious = (e) =>
+    e.status !== 'hidden' && (e.endDate ?? e.startDate) < today;
+  const isUpcoming = (e) =>
+    e.status !== 'hidden' && (e.endDate ?? e.startDate) >= today;
 
   eleventyConfig.addFilter('upcomingEvents', (events) =>
-    events.filter(isUpcoming).sort((a, b) => a.startDate.localeCompare(b.startDate)),
+    events
+      .filter(isUpcoming)
+      .sort((a, b) => a.startDate.localeCompare(b.startDate))
   );
 
   eleventyConfig.addFilter('previousEventsByYear', (events) => {
@@ -22,7 +26,9 @@ module.exports = function (eleventyConfig) {
       .sort(([a], [b]) => b - a)
       .map(([year, items]) => ({
         year,
-        events: items.slice().sort((a, b) => b.startDate.localeCompare(a.startDate)),
+        events: items
+          .slice()
+          .sort((a, b) => b.startDate.localeCompare(a.startDate)),
       }));
   });
 

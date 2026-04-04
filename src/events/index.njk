@@ -22,8 +22,7 @@ title: Events
 <h2>Previous</h2>
 {% set milestonesByYear = milestones | indexByYear %}
 <div class="timeline">
-  {% for group in events | previousEventsByYear %}
-  {% set yearMilestone = milestonesByYear[group.year] %}
+  {% for group in events | previousEventsByYear %} {% set yearMilestone = milestonesByYear[group.year] %}
   <div class="timeline-year">
     <div class="timeline-year-label">{{ group.year }}</div>
     {% if yearMilestone %}
@@ -36,7 +35,10 @@ title: Events
     <ul class="timeline-events">
       {% for event in group.events %}
       <li class="timeline-event">
-        <span class="timeline-event-name">{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.name }}</a>{% else %}{{ event.name }}{% endif %}{% if event.note %} <em>· {{ event.note }}</em>{% endif %}</span>
+        <span class="timeline-event-name"
+          >{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.name }}</a>{% else %}{{
+          event.name }}{% endif %}{% if event.note %} <em>· {{ event.note }}</em>{% endif %}</span
+        >
         <span class="timeline-event-meta">{{ event.location }}</span>
       </li>
       {% endfor %}

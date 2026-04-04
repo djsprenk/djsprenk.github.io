@@ -37,6 +37,7 @@ h2 {
 h3 {
   font-size: var(--text-xl);
   margin-bottom: var(--space-2);
+  color: var(--color-primary);
 }
 
 p {
@@ -67,7 +68,6 @@ nav {
   max-width: var(--max-width-prose);
   margin: 0 auto;
 }
-
 
 .brand-text {
   font-family: var(--font-display);
@@ -101,7 +101,6 @@ nav {
   gap: var(--space-6);
   align-items: center;
 }
-
 
 .nav-links a {
   text-decoration: none;
@@ -184,26 +183,40 @@ footer {
   color: var(--color-text-muted);
 }
 
-.footer-social a[href*="mixcloud"],
-.social-list a[href*="mixcloud"]   { color: var(--color-mixcloud); }
+.footer-social a[href*='mixcloud'],
+.social-list a[href*='mixcloud'] {
+  color: var(--color-mixcloud);
+}
 
-.footer-social a[href*="soundcloud"],
-.social-list a[href*="soundcloud"] { color: var(--color-soundcloud); }
+.footer-social a[href*='soundcloud'],
+.social-list a[href*='soundcloud'] {
+  color: var(--color-soundcloud);
+}
 
-.footer-social a[href*="instagram"],
-.social-list a[href*="instagram"]  { color: var(--color-instagram); }
+.footer-social a[href*='instagram'],
+.social-list a[href*='instagram'] {
+  color: var(--color-instagram);
+}
 
-.footer-social a[href*="facebook"],
-.social-list a[href*="facebook"]   { color: var(--color-facebook); }
+.footer-social a[href*='facebook'],
+.social-list a[href*='facebook'] {
+  color: var(--color-facebook);
+}
 
-.footer-social a[href*="patreon"],
-.social-list a[href*="patreon"]    { color: var(--color-patreon); }
+.footer-social a[href*='patreon'],
+.social-list a[href*='patreon'] {
+  color: var(--color-patreon);
+}
 
-.footer-social a[href*="venmo"],
-.social-list a[href*="venmo"]      { color: var(--color-venmo); }
+.footer-social a[href*='venmo'],
+.social-list a[href*='venmo'] {
+  color: var(--color-venmo);
+}
 
-.footer-social a[href*="paypal"],
-.social-list a[href*="paypal"]     { color: var(--color-paypal); }
+.footer-social a[href*='paypal'],
+.social-list a[href*='paypal'] {
+  color: var(--color-paypal);
+}
 
 .footer-social a:hover,
 .social-list a:hover {
