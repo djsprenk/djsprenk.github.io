@@ -34,6 +34,11 @@
   margin-bottom: 0;
 }
 
+.card-date::before {
+  content: '📅 ';
+}
+
+
 .card-title {
   font-size: var(--text-xl);
   margin-bottom: 0;
@@ -44,6 +49,11 @@
   font-size: var(--text-sm);
   color: var(--color-secondary);
   margin-bottom: 0;
+}
+
+.card-location::before {
+  content: '📍 ';
+  color: var(--color-secondary);
 }
 
 .card-link {
@@ -218,7 +228,7 @@
 }
 
 .timeline-event-meta::before {
-  content: '⊙';
+  content: '📍';
   margin-right: var(--space-1);
   font-style: normal;
 }
