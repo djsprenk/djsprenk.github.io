@@ -6,6 +6,28 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-04-03
+
+### Added
+
+- 📅 and 📍 icons added before date and location on upcoming event cards; 📍 added before location in timeline event meta
+- `/events` combined page with upcoming event cards and previous events timeline; nav "Events" link updated to point here
+- `upcomingEvents` Eleventy filter replacing manual `status: "upcoming"` checks — events automatically move to previous at build time based on date
+- About page headshot with brand pink/yellow duotone SVG filter using CSS variable colors
+- `main ol` and unclassed `main ul` now render with proper list styles (reset was stripping them)
+- Policies page (`/policies`) replacing Music Policies, with "Music Usage Policies" as a subsection — ready for additional policy sections
+
+### Changed
+
+- Brand colors updated: pink `#ff008c`, yellow `#fffc39`; `--color-secondary` token added for brand yellow
+- H1 set to `--color-text`, H2 to `--color-secondary`, H3 to `--color-primary` globally
+- Service item headings use `--color-secondary`, body text uses `--color-text`
+- Footer copyright moved inline with social links; footer and header borders removed; nav and footer constrained to prose width
+- Homepage "Featured Events" replaced with all upcoming events, sorted chronologically
+- `status: "upcoming"` and `status: "previous"` fields removed from `events.json` — only `status: "hidden"` remains as a manual override
+- Brand platform colors scoped to `.footer-social` and `.social-list` only (previously global)
+- BZDC Jack & Jill DJ service links to official BZDC registry; Set Downloads links to `/policies`
+
 ## [0.3.0] - 2026-04-03
 
 ### Added
