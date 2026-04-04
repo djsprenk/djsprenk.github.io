@@ -39,7 +39,6 @@ h3 {
 
 p {
   margin-bottom: var(--space-4);
-  color: var(--color-text);
 }
 
 a {
@@ -65,7 +64,7 @@ header {
 }
 
 .brand-text {
-  font-family: 'Brick Riot', Georgia, serif;
+  font-family: var(--font-display);
   background: linear-gradient(
     to right,
     var(--color-brand-pink),
@@ -178,7 +177,6 @@ footer {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--color-text-muted);
-  transition: color 0.2s ease;
 }
 
 .footer-social a[href*="mixcloud"],

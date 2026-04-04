@@ -54,7 +54,6 @@
 }
 
 .card-link:hover {
-  color: var(--color-primary);
   text-decoration: underline;
 }
 
@@ -115,9 +114,6 @@
   font-weight: 600;
 }
 
-.social-handle {
-  color: var(--color-text);
-}
 
 /* Timeline */
 .timeline {
@@ -179,7 +175,6 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0;
 }
 
 .timeline-event {

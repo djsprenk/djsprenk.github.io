@@ -13,7 +13,7 @@
   --color-paypal: #009cde;
 
   /* Colors */
-  --color-primary: #b82b5a;
+  --color-primary: var(--color-brand-pink);
   --color-bg: #0f0f0f;
   --color-surface: #1a1a1a;
   --color-text: #f0f0f0;
