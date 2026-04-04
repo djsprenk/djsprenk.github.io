@@ -167,10 +167,10 @@ footer {
 
 .footer-social {
   display: flex;
-  justify-content: center;
   gap: var(--space-6);
-  margin-bottom: var(--space-4);
   flex-wrap: wrap;
+  max-width: var(--max-width-prose);
+  margin: 0 auto;
 }
 
 .footer-social a {
@@ -207,10 +207,10 @@ footer {
   filter: brightness(1.2);
 }
 
-footer p {
+.footer-copyright {
   font-size: var(--text-sm);
   color: var(--color-text-muted);
-  margin-bottom: 0;
+  margin-left: auto;
 }
 
 /* About page */
