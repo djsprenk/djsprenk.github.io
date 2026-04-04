@@ -3,9 +3,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets');
 
   // Filters
+  const today = new Date().toISOString().slice(0, 10);
+  const isPrevious = (e) => e.status !== 'hidden' && (e.endDate ?? e.startDate) < today;
+  const isUpcoming = (e) => e.status !== 'hidden' && (e.endDate ?? e.startDate) >= today;
+
+  eleventyConfig.addFilter('upcomingEvents', (events) =>
+    events.filter(isUpcoming).sort((a, b) => a.startDate.localeCompare(b.startDate)),
+  );
+
   eleventyConfig.addFilter('previousEventsByYear', (events) => {
     const groups = {};
-    for (const event of events.filter((e) => e.status === 'previous')) {
+    for (const event of events.filter(isPrevious)) {
       const year = event.startDate.slice(0, 4);
       if (!groups[year]) groups[year] = [];
       groups[year].push(event);

@@ -6,14 +6,14 @@ title: Upcoming Events
 <h1>Upcoming Events</h1>
 
 <ul class="event-list">
-  {% for event in events %} {% if event.status === "upcoming" %}
+  {% for event in events | upcomingEvents %}
   <li class="event-item">
     <span class="event-item-name">{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.name }}</a>{% else %}{{ event.name }}{% endif %}</span>
     <span class="event-item-meta">
-      {{ event.location }} &mdash; {{ event.startDate }} – {{ event.endDate }}
+      {{ event.location }} &mdash; {{ event.startDate }}{% if event.endDate %} – {{ event.endDate }}{% endif %}
     </span>
   </li>
-  {% endif %} {% endfor %}
+  {% endfor %}
 </ul>
 
 <p>More events to be announced.</p>
