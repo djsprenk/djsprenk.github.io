@@ -37,11 +37,12 @@
 .card-title {
   font-size: var(--text-xl);
   margin-bottom: 0;
+  color: var(--color-text);
 }
 
 .card-location {
   font-size: var(--text-sm);
-  color: var(--color-text-muted);
+  color: var(--color-secondary);
   margin-bottom: 0;
 }
 
