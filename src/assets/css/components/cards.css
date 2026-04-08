@@ -215,9 +215,11 @@
 }
 
 .timeline-event-name em {
-  font-style: normal;
+  font-style: italic;
   font-weight: 400;
   color: var(--color-brand-yellow);
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .timeline-event-meta {
