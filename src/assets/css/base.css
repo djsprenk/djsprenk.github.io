@@ -59,6 +59,13 @@ a:hover {
   color: var(--color-primary);
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  background: var(--color-bg);
+}
+
 /* Nav */
 nav {
   display: flex;
@@ -109,14 +116,22 @@ nav {
   text-transform: uppercase;
 }
 
+.nav-close,
 .nav-toggle {
   display: none;
   background: none;
   border: none;
   cursor: pointer;
+  padding: var(--space-2);
+  width: var(--nav-toggle-size);
+  height: var(--nav-toggle-size);
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-toggle {
   flex-direction: column;
   gap: 5px;
-  padding: var(--space-2);
 }
 
 .nav-toggle span {
@@ -245,30 +260,47 @@ footer {
 
   .nav-links {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: var(--header-height, 0);
     left: 0;
     right: 0;
-    background: var(--color-surface);
-    border-bottom: 1px solid var(--color-border);
+    bottom: 0;
+    background: var(--color-bg);
     flex-direction: column;
     align-items: flex-start;
-    padding: var(--space-4);
-    gap: var(--space-4);
-    z-index: 200;
+    padding: var(--space-6);
+    gap: var(--space-2);
+    z-index: var(--z-nav-overlay);
+    overflow-y: auto;
   }
 
   .nav-links.open {
     display: flex;
   }
 
-  header {
-    position: relative;
+  .nav-links > li > a {
+    font-size: var(--text-2xl);
+  }
+
+  .nav-close {
+    display: flex;
+    color: var(--color-text);
+    font-size: var(--text-2xl);
+    line-height: 1;
   }
 
   .submenu {
     position: static;
+    display: block;
     border: none;
     padding-left: var(--space-4);
+    padding-top: var(--space-1);
+    background: none;
+  }
+
+  .submenu li a {
+    font-size: var(--text-base);
+    color: var(--color-text-muted);
+    padding: var(--space-1) var(--space-2);
   }
 }

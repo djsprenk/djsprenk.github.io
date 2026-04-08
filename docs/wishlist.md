@@ -28,5 +28,8 @@ Feature ideas and planned improvements.
   - [ ] Links
   - [ ] "Start here" embeds
 - [ ] Light / Dark modes
+- [ ] Mobile
+  - [x] Full page menu
+  - [ ] Smarter breakpoints
 - [ ] Calendar data pull
 - [ ] Add "built with" attributions
