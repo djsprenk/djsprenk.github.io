@@ -20,9 +20,14 @@ Feature ideas and planned improvements.
   - [x] Timeline styling
   - [x] Add highlights
   - [ ] Add images to event highlights
+  - [ ] Restyle highlights to better fit in timeline
 - [x] About
   - [x] Hero image
   - [x] Updates
+- [ ] Policies
+  - [x] Music Policies
+  - [ ] Promotion
+  - [ ] Hiring
 - [x] Music Landing Page
   - [x] Links
   - [x] "Start here" embeds
