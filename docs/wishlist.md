@@ -30,6 +30,6 @@ Feature ideas and planned improvements.
 - [ ] Light / Dark modes
 - [ ] Mobile
   - [x] Full page menu
-  - [ ] Smarter breakpoints
+  - [x] Smarter breakpoints
 - [ ] Calendar data pull
 - [ ] Add "built with" attributions
