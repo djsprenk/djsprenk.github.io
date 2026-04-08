@@ -260,6 +260,40 @@
   white-space: nowrap;
 }
 
+/* Music page featured sets */
+.featured-sets {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.featured-set {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.mixcloud-embed {
+  width: 100%;
+  height: 60px;
+  border-radius: var(--radius);
+}
+
+.featured-set-title {
+  font-size: var(--text-base);
+  color: var(--color-text);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.featured-set-note {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-bottom: 0;
+}
+
 /* Media kit photo grid */
 .photo-grid {
   display: grid;

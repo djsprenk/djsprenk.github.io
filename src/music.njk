@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+title: Music
+---
+
+<h1>Music</h1>
+
+<p>
+  DJ Sprenk posts weekly on (most) Wednesdays on both
+  <a href="{{ site.social.mixcloud }}" target="_blank" rel="noopener">Mixcloud</a> (primary) and
+  <a href="{{ site.social.soundcloud }}" target="_blank" rel="noopener">SoundCloud</a>.
+</p>
+
+<h2>Start Here</h2>
+
+<p>New to my music? These are the sets I'd recommend first.</p>
+
+<div class="featured-sets">
+  {% for set in featured_sets %}
+  <div class="featured-set">
+    <iframe
+      class="mixcloud-embed"
+      src="https://www.mixcloud.com/widget/iframe/?feed=/djsprenk/{{ set.slug }}/&hide_cover=1&mini=1&autoplay=0"
+      frameborder="0"
+      allow="autoplay"
+      loading="lazy"
+    ></iframe>
+    {% if set.note %}
+    <p class="featured-set-note">{{ set.note }}</p>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>

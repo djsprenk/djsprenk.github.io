@@ -23,10 +23,9 @@ Feature ideas and planned improvements.
 - [x] About
   - [x] Hero image
   - [x] Updates
-- [ ] Music Policies
-- [ ] Music Landing Page
-  - [ ] Links
-  - [ ] "Start here" embeds
+- [x] Music Landing Page
+  - [x] Links
+  - [x] "Start here" embeds
 - [ ] Light / Dark modes
 - [ ] Mobile
   - [x] Full page menu
