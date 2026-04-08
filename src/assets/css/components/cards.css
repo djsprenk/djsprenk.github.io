@@ -271,7 +271,8 @@
   aspect-ratio: 3 / 4;
   overflow: hidden;
   border-radius: var(--radius);
-  background: var(--color-surface);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
 }
 
 .photo-grid a {
@@ -286,6 +287,13 @@
   height: 100%;
   object-fit: cover;
   flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid a:hover img {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
 }
 
 .photo-grid span {

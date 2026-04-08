@@ -13,8 +13,8 @@ Feature ideas and planned improvements.
 - [x] Media kit
   - [x] Headshots
   - [x] Gallery
-  - [ ] Photo styling / hover effects
-  - [ ] Larger image preview
+  - [x] Photo styling / hover effects
+  - [x] Larger image preview / download
 - [ ] Events
   - [x] Add new events
   - [x] Timeline styling
