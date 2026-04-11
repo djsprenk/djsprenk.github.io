@@ -4,7 +4,8 @@
     "startDate": "2026-06-05",
     "endDate": "2026-06-07",
     "location": "Boston, MA, USA",
-    "url": "https://www.zouk-pirates.com/"
+    "url": "https://www.zouk-pirates.com/",
+    "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/670421308_944425361788733_4819900984587263284_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7e0d18&_nc_ohc=ji8FqDqXG80Q7kNvwHevrkz&_nc_oc=AdrTAcEMJGl47zctiyJvKdB70Zh-O88R8bbPfVK4IdvZki3Mfskx0fUlhrRvTpdjwaU&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=P41kTJibS6tT7Mid83cpjQ&_nc_ss=7a3a8&oh=00_Af0J5QEeGRWdcbyCIot2s3H2F_uOu2vLu2IpN2Fgve_16g&oe=69DFC8BF"
   },
   {
     "name": "Mind, Movement, Magic Zouk Retreat",
@@ -18,7 +19,9 @@
     "startDate": "2026-04-09",
     "endDate": "2026-04-12",
     "location": "Herndon, VA, USA",
-    "url": "https://zoukheat.com/"
+    "url": "https://zoukheat.com/",
+    "image": "https://res.cloudinary.com/damf0mchl/image/upload/v1775683231/zouk-heat-logo_x6ndbt.webp",
+    "imageAlt": "Zouk Heat logo"
   },
   {
     "name": "OmniFest",

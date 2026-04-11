@@ -6,14 +6,19 @@ title: Events
 <h1>Events</h1>
 
 <h2>Upcoming</h2>
-<ul class="card-grid">
+<ul class="card-stack">
   {% for event in events | upcomingEvents %}
-  <li class="card">
-    <p class="card-date">{{ event.startDate }}{% if event.endDate %} – {{ event.endDate }}{% endif %}</p>
-    <h3 class="card-title">{{ event.name }}</h3>
-    <p class="card-location">{{ event.location }}</p>
-    {% if event.url %}
-    <a href="{{ event.url }}" class="card-link" target="_blank" rel="noopener">Details &rarr;</a>
+  <li class="card{% if event.image %} card--horizontal{% endif %}">
+    <div class="card-body">
+      <p class="card-date">{{ event.startDate }}{% if event.endDate %} – {{ event.endDate }}{% endif %}</p>
+      <h3 class="card-title">{{ event.name }}</h3>
+      <p class="card-location">{{ event.location }}</p>
+      {% if event.url %}
+      <a href="{{ event.url }}" class="card-link" target="_blank" rel="noopener">Details &rarr;</a>
+      {% endif %}
+    </div>
+    {% if event.image %}
+    <img src="{{ event.image }}" alt="{{ event.imageAlt or event.name }}" class="card-image">
     {% endif %}
   </li>
   {% endfor %}

@@ -18,6 +18,9 @@ wideLayout: true
   <ul class="card-grid">
     {% for event in events | upcomingEvents %}
     <li class="card">
+      {% if event.image %}
+      <img src="{{ event.image }}" alt="{{ event.imageAlt or event.name }}" class="card-image">
+      {% endif %}
       <p class="card-date">{{ event.startDate }}{% if event.endDate %} – {{ event.endDate }}{% endif %}</p>
       <h3 class="card-title">{{ event.name }}</h3>
       <p class="card-location">{{ event.location }}</p>

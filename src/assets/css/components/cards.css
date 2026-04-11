@@ -15,6 +15,12 @@
   margin-bottom: var(--space-6);
 }
 
+.card-stack {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
 /* Card */
 .card {
   background: var(--color-surface);
@@ -24,6 +30,57 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
+  overflow: hidden;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  flex: 1;
+}
+
+/* Horizontal card: text left (60%), image right, overlapping with gradient fade */
+.card--horizontal {
+  position: relative;
+  flex-direction: row;
+  padding: 0;
+  gap: 0;
+  min-height: 140px;
+}
+
+.card--horizontal .card-body {
+  position: relative;
+  z-index: 2;
+  width: 60%;
+  flex: none;
+  padding: var(--space-6);
+}
+
+.card--horizontal .card-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+/* Gradient overlay: fades card surface into the image */
+.card--horizontal::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, var(--color-surface) 40%, transparent 72%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.card-image {
+  height: 160px;
+  object-fit: contain;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .card-date {
@@ -34,11 +91,9 @@
   margin-bottom: 0;
 }
 
-.card-date::before {
-  content: '📅 ';
-}
 
 .card-title {
+  font-family: var(--font-body);
   font-size: var(--text-xl);
   margin-bottom: 0;
   color: var(--color-text);
@@ -51,7 +106,6 @@
 }
 
 .card-location::before {
-  content: '📍 ';
   color: var(--color-secondary);
 }
 
@@ -343,6 +397,30 @@
 }
 
 @media (max-width: 600px) {
+  .card-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .card--horizontal {
+    min-height: unset;
+    flex-direction: column;
+  }
+
+  .card--horizontal .card-image {
+    position: static;
+    width: 100%;
+    height: 160px;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+
+  .card--horizontal .card-body {
+    width: 100%;
+  }
+
+  .card--horizontal::after {
+    display: none;
+  }
+
   .event-item {
     flex-direction: column;
     gap: var(--space-1);
