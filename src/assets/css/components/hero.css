@@ -11,6 +11,7 @@
 .splash-page footer {
   background: transparent;
   border-color: transparent;
+  box-shadow: none;
 }
 
 .splash-page header:has(.nav-toggle[aria-expanded='true']) {
