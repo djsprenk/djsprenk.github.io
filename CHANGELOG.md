@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-05-09
+
+### Fixed
+
+- `.gitignore` `Icon?` pattern narrowed to `Icon[\r]` so it no longer matches
+  the `src/_includes/icons/` directory; SVG icon files are now committed and
+  available at build time on GitHub Pages
+
 ## [1.0.1] - 2026-05-09
 
 ### Fixed
