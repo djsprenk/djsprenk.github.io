@@ -198,15 +198,14 @@ footer {
   gap: var(--space-6);
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   max-width: var(--max-width-prose);
   margin: 0 auto;
 }
 
 .footer-social a {
   text-decoration: none;
-  font-size: var(--text-sm);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: var(--text-xl);
   color: var(--color-text-muted);
 }
 
@@ -253,7 +252,6 @@ footer {
 .footer-copyright {
   font-size: var(--text-sm);
   color: var(--color-text-muted);
-  margin-left: auto;
 }
 
 /* About page */
@@ -318,5 +316,10 @@ footer {
 
   .submenu li a:hover {
     color: var(--color-primary);
+  }
+
+  .footer-copyright {
+    width: 100%;
+    text-align: center;
   }
 }
