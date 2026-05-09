@@ -163,18 +163,6 @@
   margin-bottom: var(--space-8);
 }
 
-.social-list li::before {
-  content: '|';
-  color: var(--color-border);
-  margin-right: var(--space-2);
-}
-
-.social-list li:last-child::after {
-  content: '|';
-  color: var(--color-border);
-  margin-left: var(--space-2);
-}
-
 .social-list a {
   text-decoration: none;
 }

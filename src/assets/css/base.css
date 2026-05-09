@@ -216,25 +216,50 @@ footer {
   height: 1.25rem;
 }
 
-.social-list a[href*='mixcloud'] {
+.social-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.social-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.social-list a span {
+  color: var(--color-text);
+}
+
+.social-list a svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.social-list a[href*='mixcloud'] svg {
   color: var(--color-mixcloud);
 }
-.social-list a[href*='soundcloud'] {
+.social-list a[href*='soundcloud'] svg {
   color: var(--color-soundcloud);
 }
-.social-list a[href*='instagram'] {
+.social-list a[href*='instagram'] svg {
   color: var(--color-instagram);
 }
-.social-list a[href*='facebook'] {
+.social-list a[href*='facebook'] svg {
   color: var(--color-facebook);
 }
-.social-list a[href*='patreon'] {
+.social-list a[href*='patreon'] svg {
   color: var(--color-patreon);
 }
-.social-list a[href*='venmo'] {
+.social-list a[href*='venmo'] svg {
   color: var(--color-venmo);
 }
-.social-list a[href*='paypal'] {
+.social-list a[href*='paypal'] svg {
   color: var(--color-paypal);
 }
 
