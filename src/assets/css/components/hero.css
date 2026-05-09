@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: var(--space-16) var(--space-4);
-  min-height: 60vh;
+  padding: var(--space-8) var(--space-4);
+  flex: 1;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url('https://res.cloudinary.com/damf0mchl/image/upload/sprenk_2022_action_atlanta_1.jpg');
@@ -13,19 +13,12 @@
   background-position: center top;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  margin-top: calc(var(--space-8) * -1);
-  margin-bottom: var(--space-12);
 }
 
 .hero h1 {
   font-size: clamp(2.5rem, 8vw, 5rem);
   letter-spacing: -0.02em;
   margin-bottom: var(--space-4);
-  background: none;
-  -webkit-text-fill-color: var(--color-brand-yellow);
-  color: var(--color-brand-yellow);
-  text-shadow: 4px 4px 0 var(--color-brand-pink);
 }
 
 .hero p {

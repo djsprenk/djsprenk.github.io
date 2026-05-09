@@ -46,6 +46,7 @@
   --max-width: 1100px;
   --max-width-prose: 760px;
   --radius: 4px;
+  --header-height: 4rem;
   --z-header: 201;
   --z-nav-overlay: 200;
   --nav-toggle-size: 40px;

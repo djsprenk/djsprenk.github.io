@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Home
-wideLayout: true
+splashPage: true
 ---
 
 <section class="hero">
@@ -11,26 +11,4 @@ wideLayout: true
     <a href="/events" class="btn btn-primary">Upcoming Events</a>
     <a href="/contact" class="btn btn-outline">Book Me</a>
   </div>
-</section>
-
-<section class="section">
-  <h2>Upcoming Events</h2>
-  <ul class="card-stack">
-    {% for event in events | upcomingEvents %}
-    <li class="card{% if event.image %} card--horizontal{% endif %}{% if event.url %} card--clickable{% endif %}">
-      {% if event.url %}
-      <a href="{{ event.url }}" class="card-overlay" target="_blank" rel="noopener" aria-label="{{ event.name }}"></a>
-      {% endif %}
-      <div class="card-body">
-        <p class="card-date">{{ event.startDate }}{% if event.endDate %} – {{ event.endDate }}{% endif %}</p>
-        <h3 class="card-title">{{ event.name }}</h3>
-        <p class="card-location">{{ event.location }}</p>
-      </div>
-      {% if event.image %}
-      <img src="{{ event.image }}" alt="{{ event.imageAlt or event.name }}" class="card-image" />
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-  <p><a href="/events">See all events &rarr;</a></p>
 </section>
