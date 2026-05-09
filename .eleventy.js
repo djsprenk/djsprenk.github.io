@@ -1,3 +1,6 @@
+const fs = require('fs');
+const path = require('path');
+
 module.exports = function (eleventyConfig) {
   // Pass assets through to _site unchanged
   eleventyConfig.addPassthroughCopy('src/assets');
@@ -41,6 +44,10 @@ module.exports = function (eleventyConfig) {
 
   // Shortcodes
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
+  eleventyConfig.addShortcode('icon', (name) => {
+    const filePath = path.join(__dirname, 'src/_includes/icons', `${name}.svg`);
+    return fs.readFileSync(filePath, 'utf8');
+  });
 
   return {
     dir: {
