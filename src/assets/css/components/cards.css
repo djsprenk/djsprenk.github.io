@@ -83,7 +83,11 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, var(--color-surface) 40%, transparent 72%);
+  background: linear-gradient(
+    to right,
+    var(--color-surface) 40%,
+    transparent 72%
+  );
   z-index: 1;
   pointer-events: none;
 }
@@ -102,7 +106,6 @@
   letter-spacing: 0.05em;
   margin-bottom: 0;
 }
-
 
 .card-title {
   font-family: var(--font-heading);
@@ -213,7 +216,6 @@
   background: var(--color-primary);
   border: 2px solid var(--color-bg);
 }
-
 
 .timeline-events {
   list-style: none;

@@ -10,19 +10,28 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
-- `/music` landing page with intro copy and "Start Here" Mixcloud embed section; `src/_data/featured_sets.json` drives up to 10 curated sets with optional per-set notes
+- `/music` landing page with intro copy and "Start Here" Mixcloud embed section;
+  `src/_data/featured_sets.json` drives up to 10 curated sets with optional
+  per-set notes
 - Mobile nav overlay
-  - full-viewport menu opens below the sticky header, with auto-expanded submenus, a close button (×) that swaps with the hamburger
+  - full-viewport menu opens below the sticky header, with auto-expanded
+    submenus, a close button (×) that swaps with the hamburger
   - `Escape` key support, and event-delegated link listeners
-- Media kit images: white background fill for transparent PNGs, subtle border, zoom/lift/brighten hover effect, `fl_attachment` Cloudinary flag on download links
-- Footer and nav Music submenu social links now use `site.social.*` from `site.json` as the single source of truth
+- Media kit images: white background fill for transparent PNGs, subtle border,
+  zoom/lift/brighten hover effect, `fl_attachment` Cloudinary flag on download
+  links
+- Footer and nav Music submenu social links now use `site.social.*` from
+  `site.json` as the single source of truth
 
 ### Changed
 
 - Mobile nav breakpoint changed from 768px to 640px
-- Media kit moved under the "About" submenu in nav; redundant "About" submenu item removed
-- Timeline event notes are now italic and `white-space: nowrap` so they drop as a whole unit rather than breaking mid-text
-- `[hidden]` enforcement added to reset.css so CSS display rules can't accidentally override the HTML attribute
+- Media kit moved under the "About" submenu in nav; redundant "About" submenu
+  item removed
+- Timeline event notes are now italic and `white-space: nowrap` so they drop as
+  a whole unit rather than breaking mid-text
+- `[hidden]` enforcement added to reset.css so CSS display rules can't
+  accidentally override the HTML attribute
 
 ## [0.4.0] - 2026-04-03
 

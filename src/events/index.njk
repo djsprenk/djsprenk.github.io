@@ -18,7 +18,7 @@ title: Events
       <p class="card-location">{{ event.location }}</p>
     </div>
     {% if event.image %}
-    <img src="{{ event.image }}" alt="{{ event.imageAlt or event.name }}" class="card-image">
+    <img src="{{ event.image }}" alt="{{ event.imageAlt or event.name }}" class="card-image" />
     {% endif %}
   </li>
   {% endfor %}

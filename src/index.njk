@@ -20,9 +20,8 @@ wideLayout: true
     <li class="card{% if event.url %} card--clickable{% endif %}">
       {% if event.url %}
       <a href="{{ event.url }}" class="card-overlay" target="_blank" rel="noopener" aria-label="{{ event.name }}"></a>
-      {% endif %}
-      {% if event.image %}
-      <img src="{{ event.image }}" alt="{{ event.imageAlt or event.name }}" class="card-image">
+      {% endif %} {% if event.image %}
+      <img src="{{ event.image }}" alt="{{ event.imageAlt or event.name }}" class="card-image" />
       {% endif %}
       <p class="card-date">{{ event.startDate }}{% if event.endDate %} – {{ event.endDate }}{% endif %}</p>
       <h3 class="card-title">{{ event.name }}</h3>
