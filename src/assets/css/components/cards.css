@@ -105,7 +105,7 @@
 
 
 .card-title {
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
   font-size: var(--text-xl);
   margin-bottom: 0;
   color: var(--color-text);
@@ -194,7 +194,7 @@
 
 .timeline-year-label {
   position: relative;
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: var(--text-2xl);
   text-transform: uppercase;
   margin-bottom: var(--space-4);
