@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-05-09
+
+### Fixed
+
+- Social icons now inline correctly at build time via an `{% icon "name" %}`
+  Eleventy shortcode (reads SVG from disk) replacing
+  `{% include "icons/name.svg" %}`, which Nunjucks could not resolve for
+  non-template file extensions
+
 ## [1.0.0] - 2026-05-09
 
 ### Added
