@@ -1,6 +1,7 @@
 # djsprenk.com
 
-Personal DJ portfolio site for DJ Sprenk. Built with [Eleventy (11ty)](https://www.11ty.dev/) and deployed to GitHub Pages.
+Personal DJ portfolio site for DJ Sprenk. Built with
+[Eleventy (11ty)](https://www.11ty.dev/) and deployed to GitHub Pages.
 
 ## Development
 

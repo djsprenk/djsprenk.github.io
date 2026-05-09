@@ -6,6 +6,32 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-05-08
+
+### Added
+
+- `README.md` with project overview, dev commands, stack summary, and directory
+  structure
+- `LICENSE` — MIT license
+
+### Changed
+
+- Staatliches font added for all headings (`h1`–`h4`), timeline year labels, and
+  event card titles; nav logo retains the existing display font
+- Timeline milestone achievements restyled as inline timeline entries with a
+  hollow pink circle dot and pink text, matching the visual rhythm of event rows
+- Upcoming events page removed; homepage "Upcoming Events" button and previous
+  events page "View upcoming events" link both now point to `/events`
+- Event cards on the homepage now use the same horizontal layout
+  (`card--horizontal`, `card-body` wrapper, `card-stack`) as the events page for
+  visual consistency
+- Upcoming event card images now use `object-fit: cover` and bleed edge-to-edge
+  (negative margins cancel card padding) instead of contained with a dark
+  background
+- Horizontal card image reset to `margin: 0` and explicit `width: 40%` /
+  `bottom: 0` so it fills the full card height and doesn't inherit the top-card
+  negative margins
+
 ## [0.5.0] - 2026-04-03
 
 ### Added
