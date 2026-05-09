@@ -22,6 +22,7 @@
   --color-border: #2a2a2a;
 
   /* Typography */
+  --font-display: 'Brick Riot', Georgia, serif;
   --font-heading: 'Staatliches', Georgia, serif;
   --font-body: system-ui, -apple-system, sans-serif;
   --text-sm: 0.875rem;
