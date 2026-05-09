@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-05-09
+
+### Fixed
+
+- Renamed `.footer-social` CSS class to `.footer-links` to prevent ad blockers
+  from hiding the footer based on the class name
+
 ## [1.0.2] - 2026-05-09
 
 ### Fixed
