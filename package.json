@@ -1,6 +1,6 @@
 {
   "name": "djsprenk.com",
-  "version": "0.7.0",
+  "version": "1.0.0",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -11,9 +11,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["DJ", "Brazilian Zouk", "Mixes", "Music"],
+  "author": "DJ Sprenk",
+  "license": "MIT",
   "type": "commonjs",
   "description": "",
   "devDependencies": {
