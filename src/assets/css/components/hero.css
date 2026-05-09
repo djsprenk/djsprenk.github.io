@@ -1,3 +1,22 @@
+.splash-page {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('https://res.cloudinary.com/damf0mchl/image/upload/sprenk_2022_action_atlanta_1.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.splash-page header,
+.splash-page footer {
+  background: transparent;
+  border-color: transparent;
+}
+
+.splash-page header:has(.nav-toggle[aria-expanded='true']) {
+  background: var(--color-bg);
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -6,11 +25,6 @@
   text-align: center;
   padding: var(--space-8) var(--space-4);
   flex: 1;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url('https://res.cloudinary.com/damf0mchl/image/upload/sprenk_2022_action_atlanta_1.jpg');
-  background-size: cover;
-  background-position: center top;
   width: 100vw;
   margin-left: calc(50% - 50vw);
 }
@@ -19,6 +33,9 @@
   font-size: clamp(2.5rem, 8vw, 5rem);
   letter-spacing: -0.02em;
   margin-bottom: var(--space-4);
+  background: none;
+  -webkit-text-fill-color: var(--color-text);
+  color: var(--color-text);
 }
 
 .hero p {
