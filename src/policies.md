@@ -11,7 +11,7 @@ For any questions, clarifications, or special cases, [get in touch](/contact)!
 
 ## Music Usage Policies
 
-My guiding principles:
+Guiding principles:
 
 1. Music is meant to be shared.
 2. Don't unfairly profit off of it.
