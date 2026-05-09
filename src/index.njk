@@ -15,17 +15,20 @@ wideLayout: true
 
 <section class="section">
   <h2>Upcoming Events</h2>
-  <ul class="card-grid">
+  <ul class="card-stack">
     {% for event in events | upcomingEvents %}
-    <li class="card{% if event.url %} card--clickable{% endif %}">
+    <li class="card{% if event.image %} card--horizontal{% endif %}{% if event.url %} card--clickable{% endif %}">
       {% if event.url %}
       <a href="{{ event.url }}" class="card-overlay" target="_blank" rel="noopener" aria-label="{{ event.name }}"></a>
-      {% endif %} {% if event.image %}
+      {% endif %}
+      <div class="card-body">
+        <p class="card-date">{{ event.startDate }}{% if event.endDate %} – {{ event.endDate }}{% endif %}</p>
+        <h3 class="card-title">{{ event.name }}</h3>
+        <p class="card-location">{{ event.location }}</p>
+      </div>
+      {% if event.image %}
       <img src="{{ event.image }}" alt="{{ event.imageAlt or event.name }}" class="card-image" />
       {% endif %}
-      <p class="card-date">{{ event.startDate }}{% if event.endDate %} – {{ event.endDate }}{% endif %}</p>
-      <h3 class="card-title">{{ event.name }}</h3>
-      <p class="card-location">{{ event.location }}</p>
     </li>
     {% endfor %}
   </ul>

@@ -73,7 +73,10 @@
   position: absolute;
   right: 0;
   top: 0;
+  bottom: 0;
+  width: 40%;
   height: 100%;
+  margin: 0;
   object-fit: cover;
   border-radius: 0 var(--radius) var(--radius) 0;
 }
@@ -94,8 +97,10 @@
 
 .card-image {
   height: 160px;
-  object-fit: contain;
-  background: var(--color-bg);
+  object-fit: cover;
+  width: calc(100% + 2 * var(--space-6));
+  margin-top: calc(-1 * var(--space-6));
+  margin-left: calc(-1 * var(--space-6));
   border-bottom: 1px solid var(--color-border);
 }
 
