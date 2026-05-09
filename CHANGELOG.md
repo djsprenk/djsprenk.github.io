@@ -6,6 +6,39 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-05-09
+
+### Added
+
+- Deployed using GitHub pages to djsprenk.com
+- Always Smile font (`AlwaysSmile.woff2`) registered and applied as the nav logo
+  display font via `--font-display`
+- Media kit Socials section now shows bundled brand SVG icon beside each
+  platform URL (e.g. Mixcloud logo + `mixcloud.com/djsprenk`); icons are
+  brand-colored, text stays white
+- Splash page: hero background image extends behind a transparent header and
+  footer so the photo fills the full viewport; header/footer regain solid
+  background when the mobile menu is open
+- Splash page: text-shadow on nav links and footer copyright, drop-shadow on
+  footer SVG icons for legibility over the background image; nav logo excluded
+- Header `box-shadow` on all non-splash pages for subtle depth
+
+### Changed
+
+- Footer social icons switched from Font Awesome CDN to locally bundled Simple
+  Icons SVGs (`{% include "icons/[name].svg" %}`), eliminating the CDN
+  dependency that caused icons to not render on production
+- Media kit Socials updated from `@djsprenk` handle text to full platform URL
+  (e.g. `mixcloud.com/djsprenk`)
+- Hero h1 changed from pink/yellow gradient to solid white for legibility over
+  the background photo
+- Footer copyright "DJ SPRENK" now uses the Always Smile display font in
+  all-caps grey, matching the nav logo style without the gradient
+
+### Removed
+
+- Brick Riot font removed from `fonts.css`, `tokens.css`, and font files deleted
+
 ## [0.7.0] - 2026-05-08
 
 ### Added
