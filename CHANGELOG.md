@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.7.0] - 2026-05-08
+
 ### Added
 
 - Footer social links replaced with Font Awesome brand icons (white by default,
