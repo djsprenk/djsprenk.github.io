@@ -194,7 +194,7 @@ footer {
   border-top: 1px solid var(--color-border);
 }
 
-.footer-social {
+.footer-links {
   display: flex;
   gap: var(--space-6);
   flex-wrap: wrap;
@@ -204,7 +204,7 @@ footer {
   margin: 0 auto;
 }
 
-.footer-social a {
+.footer-links a {
   text-decoration: none;
   color: var(--color-text);
   transition: color 0.2s ease;
@@ -212,7 +212,7 @@ footer {
   align-items: center;
 }
 
-.footer-social a svg {
+.footer-links a svg {
   width: 1.25rem;
   height: 1.25rem;
 }
@@ -264,25 +264,25 @@ footer {
   color: var(--color-paypal);
 }
 
-.footer-social a:hover[href*='mixcloud'] {
+.footer-links a:hover[href*='mixcloud'] {
   color: var(--color-mixcloud);
 }
-.footer-social a:hover[href*='soundcloud'] {
+.footer-links a:hover[href*='soundcloud'] {
   color: var(--color-soundcloud);
 }
-.footer-social a:hover[href*='instagram'] {
+.footer-links a:hover[href*='instagram'] {
   color: var(--color-instagram);
 }
-.footer-social a:hover[href*='facebook'] {
+.footer-links a:hover[href*='facebook'] {
   color: var(--color-facebook);
 }
-.footer-social a:hover[href*='patreon'] {
+.footer-links a:hover[href*='patreon'] {
   color: var(--color-patreon);
 }
-.footer-social a:hover[href*='venmo'] {
+.footer-links a:hover[href*='venmo'] {
   color: var(--color-venmo);
 }
-.footer-social a:hover[href*='paypal'] {
+.footer-links a:hover[href*='paypal'] {
   color: var(--color-paypal);
 }
 

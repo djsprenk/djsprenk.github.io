@@ -27,7 +27,7 @@
   text-shadow: none;
 }
 
-.splash-page footer .footer-social a svg {
+.splash-page footer .footer-links a svg {
   filter: drop-shadow(0px 0px 4px rgb(0, 0, 0));
 }
 
