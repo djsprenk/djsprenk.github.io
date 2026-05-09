@@ -6,6 +6,35 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Footer social links replaced with Font Awesome brand icons (white by default,
+  brand color on hover) for a cleaner, more compact footer
+- Courses page image (DJ Cheat Codes square graphic from Cloudinary)
+- DJ Cheat Codes Part 1 and Part 2 Patreon shop links on the courses page
+
+### Changed
+
+- Hero splash layout: footer is now in normal document flow sized to content;
+  body uses flex column with `min-height: 100dvh` so the hero fills remaining
+  viewport height via `flex: 1`; footer icons centered with copyright wrapping
+  to its own line on mobile
+- Hero h1 now uses the same pink-to-yellow gradient as the nav logo
+  (`.brand-text`) instead of a solid yellow with drop shadow
+- "Upcoming Events" hero button now includes an inline calendar SVG icon; `.btn`
+  changed to `inline-flex` for icon/text alignment
+- Music nav item simplified from a dropdown (Mixcloud/SoundCloud submenu) to a
+  plain link to `/music`
+- Contact nav item simplified from a dropdown to a plain link to `/contact`
+- Courses page content changed from a bulleted list to flat headings and
+  paragraphs
+
+### Removed
+
+- Feedback page (`/feedback`) and its nav entry removed
+- "This course has concluded" copy on courses page replaced with direct Patreon
+  session links
+
 ## [0.6.0] - 2026-05-08
 
 ### Added
