@@ -23,6 +23,11 @@ label span {
   color: var(--color-text-muted);
 }
 
+label span[aria-hidden='true'],
+.form-required-note span[aria-hidden='true'] {
+  color: var(--color-primary);
+}
+
 input[type='text'],
 input[type='email'],
 textarea,
