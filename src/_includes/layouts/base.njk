@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/assets/css/components/forms.css" />
   </head>
   <body{% if splashPage %} class="splash-page"{% endif %}>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
       <nav>
         <a href="/" class="nav-logo brand-text">DJ Sprenk</a>
@@ -39,7 +40,7 @@
       </nav>
     </header>
 
-    <main{% if splashPage %} class="splash"{% elif wideLayout %} class="wide"{% endif %}>{{ content | safe }}</main>
+    <main id="main-content"{% if splashPage %} class="splash"{% elif wideLayout %} class="wide"{% endif %}>{{ content | safe }}</main>
 
     <footer>
       <ul class="footer-links">

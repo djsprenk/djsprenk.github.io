@@ -1,3 +1,21 @@
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-4);
+  z-index: calc(var(--z-header) + 1);
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-secondary);
+  color: #000;
+  font-weight: 600;
+  font-size: var(--text-sm);
+  text-decoration: none;
+  border-radius: var(--radius);
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+}
+
 body {
   font-family: var(--font-body);
   font-size: var(--text-base);
