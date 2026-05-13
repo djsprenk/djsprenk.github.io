@@ -4,6 +4,32 @@ title: Events
 description: 'Upcoming and past performances by DJ Sprenk — Brazilian Zouk festivals, weekenders, and socials across the US, Canada, Europe, and beyond.'
 ---
 
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {% for event in events | upcomingEvents %}
+      {
+        "@type": "MusicEvent",
+        "name": "{{ event.name }}",
+        "startDate": "{{ event.startDate }}",
+        "endDate": "{{ event.endDate }}",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "{{ event.location }}"
+        }{% if event.url %},
+        "url": "{{ event.url }}"{% endif %},
+        "performer": {
+          "@id": "{{ site.url }}/#person"
+        }
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+</script>
+
 <h1>Events</h1>
 
 <h2>Upcoming</h2>
