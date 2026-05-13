@@ -57,13 +57,6 @@ description: 'Upcoming and past performances by DJ Sprenk — Brazilian Zouk fes
   {% for group in events | previousEventsByYear %} {% set yearMilestone = milestonesByYear[group.year] %}
   <div class="timeline-year">
     <div class="timeline-year-label">{{ group.year }}</div>
-    {% if yearMilestone %}
-    <ul class="timeline-achievements">
-      {% for achievement in yearMilestone.achievements %}
-      <li class="timeline-achievement">{{ achievement }}</li>
-      {% endfor %}
-    </ul>
-    {% endif %}
     <ul class="timeline-events">
       {% for event in group.events %}
       <li class="timeline-event">
