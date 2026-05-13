@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="/assets/css/components/cards.css" />
     <link rel="stylesheet" href="/assets/css/components/forms.css" />
   </head>
-  <body{% if splashPage %} class="splash-page"{% endif %}>
+  <body class="{% if splashPage %}splash-page{% endif %}">
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
       <nav aria-label="Main">
@@ -54,16 +54,44 @@
       </nav>
     </header>
 
-    <main id="main-content"{% if splashPage %} class="splash"{% elif wideLayout %} class="wide"{% endif %}>{{ content | safe }}</main>
+    <main id="main-content" {% if splashPage %} class="splash" {% elif wideLayout %} class="wide" {% endif %}>
+      {{ content | safe }}
+    </main>
 
     <footer>
       <ul class="footer-links">
-        <li><a href="{{ site.social.mixcloud }}" target="_blank" rel="noopener" aria-label="Mixcloud, opens in new tab">{% icon "mixcloud" %}</a></li>
-        <li><a href="{{ site.social.soundcloud }}" target="_blank" rel="noopener" aria-label="SoundCloud, opens in new tab">{% icon "soundcloud" %}</a></li>
-        <li><a href="{{ site.social.instagram }}" target="_blank" rel="noopener" aria-label="Instagram, opens in new tab">{% icon "instagram" %}</a></li>
-        <li><a href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Facebook, opens in new tab">{% icon "facebook" %}</a></li>
-        <li><a href="{{ site.social.patreon }}" target="_blank" rel="noopener" aria-label="Patreon, opens in new tab">{% icon "patreon" %}</a></li>
-        <li class="footer-copyright">&copy; {% year %} <span style="font-family: var(--font-display); text-transform: uppercase;">DJ Sprenk</span></li>
+        <li>
+          <a href="{{ site.social.mixcloud }}" target="_blank" rel="noopener" aria-label="Mixcloud, opens in new tab"
+            >{% icon "mixcloud" %}</a
+          >
+        </li>
+        <li>
+          <a
+            href="{{ site.social.soundcloud }}"
+            target="_blank"
+            rel="noopener"
+            aria-label="SoundCloud, opens in new tab"
+            >{% icon "soundcloud" %}</a
+          >
+        </li>
+        <li>
+          <a href="{{ site.social.instagram }}" target="_blank" rel="noopener" aria-label="Instagram, opens in new tab"
+            >{% icon "instagram" %}</a
+          >
+        </li>
+        <li>
+          <a href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Facebook, opens in new tab"
+            >{% icon "facebook" %}</a
+          >
+        </li>
+        <li>
+          <a href="{{ site.social.patreon }}" target="_blank" rel="noopener" aria-label="Patreon, opens in new tab"
+            >{% icon "patreon" %}</a
+          >
+        </li>
+        <li class="footer-copyright">
+          &copy; {% year %} <span style="font-family: var(--font-display); text-transform: uppercase">DJ Sprenk</span>
+        </li>
       </ul>
     </footer>
 
