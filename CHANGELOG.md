@@ -6,6 +6,67 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-05-13
+
+### Added
+
+- Skip-to-main-content link for keyboard and screen-reader users
+- Global `:focus-visible` ring using brand yellow for consistent keyboard focus
+  indicator across all interactive elements
+- `prefers-reduced-motion` support: all CSS transitions/animations suppressed
+  and hero parallax disabled when user has reduced motion enabled
+- `aria-label="Main"` on `<nav>` for landmark navigation
+- Required-fields legend on contact form with visually-hidden `.sr-only` utility
+  class
+- Download overlay on media kit photo grid, visible on hover/focus with correct
+  `download` attribute
+- `Person` JSON-LD schema on About page with `sameAs` social links and
+  `knowsAbout` fields for entity disambiguation
+- `MusicEvent` JSON-LD schema on Events page, generated from existing
+  `events.json` data, with `eventStatus` and `eventAttendanceMode` for Google
+  Rich Results eligibility
+- `Course` JSON-LD schema on DJ Cheat Codes page linked back to the Person
+  entity via `provider`
+- `<meta name="description">` on all pages with per-page frontmatter field and
+  site tagline fallback
+- Open Graph tags (`og:title`, `og:description`, `og:url`, `og:image`,
+  `og:type`) and Twitter Card tags on all pages via `base.njk`
+- `<link rel="canonical">` on all pages
+- `site.url` and `site.ogImage` fields in `site.json` as single source of truth
+  for absolute URLs and default share image
+- `/robots.txt` allowing all crawlers with `Sitemap:` directive
+- `/sitemap.xml` auto-generated from `collections.all`
+- `formatDateRange` and `formatDateRangeShort` Eleventy filters for
+  human-readable event date ranges
+- "By the Numbers" stats section on About page surfacing Mixcloud streaming
+  milestones as E-E-A-T signals
+- Submenu keyboard navigation: ArrowDown opens submenu, ArrowUp/Down cycle
+  items, Escape closes and returns focus
+- `aria-haspopup` and `aria-expanded` on About nav trigger; `role="menu"` /
+  `role="menuitem"` on submenu
+- `title` attribute on Mixcloud iframe embeds
+- Visually-hidden "opens in new tab" announcement on all `target="_blank"` links
+  via CSS `::after`; footer icon `aria-label` values updated to include same
+  text
+
+### Changed
+
+- Brand pink updated from `#c90d5c` to `#ff2d78` to meet AA contrast (4.5:1) for
+  small text on dark backgrounds
+- Focus outline on form inputs changed from `outline: none` to yellow `outline`
+  using `:focus-visible`
+- Mobile nav `openMenu()` now moves focus to first nav link; `closeMenu()`
+  returns focus to toggle button
+- Event dates on upcoming cards formatted as human-readable ranges (e.g. "June
+  5–7, 2026")
+- Timeline event meta now shows `📅 {date} 📍 {location}` with date formatted
+  via `formatDateRangeShort`
+- `<body class="...">` pattern replaces `<body{% if %}>` to fix Prettier HTML
+  parse error
+- Milestone achievements removed from events timeline rendered output (data
+  retained in `milestones.json`)
+- Per-page `description` frontmatter added to all pages
+
 ## [1.0.3] - 2026-05-09
 
 ### Fixed
