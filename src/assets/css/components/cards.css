@@ -360,17 +360,19 @@
 
 .photo-grid li {
   aspect-ratio: 3 / 4;
-  overflow: hidden;
-  border-radius: var(--radius);
   background: var(--color-bg);
   border: 1px solid var(--color-border);
+  border-radius: var(--radius);
 }
 
 .photo-grid a {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
   text-decoration: none;
+  overflow: hidden;
+  border-radius: var(--radius);
 }
 
 .photo-grid img {
@@ -390,12 +392,24 @@
 }
 
 .photo-grid span {
-  display: block;
-  padding: var(--space-2);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  color: var(--color-text);
   font-size: var(--text-sm);
-  text-align: center;
-  color: var(--color-text-muted);
-  background: var(--color-surface);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.photo-grid a:hover span,
+.photo-grid a:focus-visible span {
+  opacity: 1;
 }
 
 @media (max-width: 600px) {
