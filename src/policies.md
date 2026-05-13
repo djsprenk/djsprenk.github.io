@@ -1,6 +1,9 @@
 ---
 layout: layouts/base.njk
 title: Policies
+description:
+  'Guidelines for working with DJ Sprenk — booking terms, music use policies,
+  and what to expect when hiring a Brazilian Zouk DJ.'
 ---
 
 # Policies
