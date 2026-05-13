@@ -87,6 +87,16 @@ a:hover {
   color: var(--color-primary);
 }
 
+a[target='_blank']:not([aria-label])::after {
+  content: ' (opens in new tab)';
+  display: inline-block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
 header {
   position: sticky;
   top: 0;
