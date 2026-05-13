@@ -40,7 +40,7 @@ description: 'Upcoming and past performances by DJ Sprenk — Brazilian Zouk fes
     <a href="{{ event.url }}" class="card-overlay" target="_blank" rel="noopener" aria-label="{{ event.name }}"></a>
     {% endif %}
     <div class="card-body">
-      <p class="card-date">{{ event.startDate }}{% if event.endDate %} – {{ event.endDate }}{% endif %}</p>
+      <p class="card-date">{{ event.startDate | formatDateRange(event.endDate) }}</p>
       <h3 class="card-title">{{ event.name }}</h3>
       <p class="card-location">{{ event.location }}</p>
     </div>

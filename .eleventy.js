@@ -35,6 +35,38 @@ module.exports = function (eleventyConfig) {
       }));
   });
 
+  eleventyConfig.addFilter('formatDateRange', (startDate, endDate) => {
+    const months = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
+    ];
+    const parse = (str) => new Date(str + 'T00:00:00Z');
+    const s = parse(startDate);
+    const e = endDate ? parse(endDate) : s;
+    const sMonth = months[s.getUTCMonth()],
+      eMonth = months[e.getUTCMonth()];
+    const sDay = s.getUTCDate(),
+      eDay = e.getUTCDate();
+    const sYear = s.getUTCFullYear(),
+      eYear = e.getUTCFullYear();
+    if (!endDate || startDate === endDate) return `${sMonth} ${sDay}, ${sYear}`;
+    if (sYear === eYear && s.getUTCMonth() === e.getUTCMonth())
+      return `${sMonth} ${sDay}–${eDay}, ${sYear}`;
+    if (sYear === eYear)
+      return `${sMonth} ${sDay} – ${eMonth} ${eDay}, ${sYear}`;
+    return `${sMonth} ${sDay}, ${sYear} – ${eMonth} ${eDay}, ${eYear}`;
+  });
+
   eleventyConfig.addFilter('indexByYear', (arr) => {
     return arr.reduce((acc, item) => {
       acc[String(item.year)] = item;
