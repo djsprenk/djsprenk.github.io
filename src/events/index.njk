@@ -71,7 +71,9 @@ description: 'Upcoming and past performances by DJ Sprenk — Brazilian Zouk fes
           >{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.name }}</a>{% else %}{{
           event.name }}{% endif %}{% if event.note %} <em>· {{ event.note }}</em>{% endif %}</span
         >
-        <span class="timeline-event-meta">{{ event.location }}</span>
+        <span class="timeline-event-meta"
+          >📅 {{ event.startDate | formatDateRangeShort(event.endDate) }} 📍 {{ event.location }}</span
+        >
       </li>
       {% endfor %}
     </ul>

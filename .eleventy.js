@@ -35,6 +35,33 @@ module.exports = function (eleventyConfig) {
       }));
   });
 
+  eleventyConfig.addFilter('formatDateRangeShort', (startDate, endDate) => {
+    const months = [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec',
+    ];
+    const parse = (str) => new Date(str + 'T00:00:00Z');
+    const s = parse(startDate);
+    const e = endDate ? parse(endDate) : s;
+    const sMonth = months[s.getUTCMonth()],
+      eMonth = months[e.getUTCMonth()];
+    const sDay = s.getUTCDate(),
+      eDay = e.getUTCDate();
+    if (!endDate || startDate === endDate) return `${sMonth} ${sDay}`;
+    if (s.getUTCMonth() === e.getUTCMonth()) return `${sMonth} ${sDay}–${eDay}`;
+    return `${sMonth} ${sDay} – ${eMonth} ${eDay}`;
+  });
+
   eleventyConfig.addFilter('formatDateRange', (startDate, endDate) => {
     const months = [
       'January',

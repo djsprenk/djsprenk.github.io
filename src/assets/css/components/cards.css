@@ -284,12 +284,6 @@
   white-space: nowrap;
 }
 
-.timeline-event-meta::before {
-  content: '📍';
-  margin-right: var(--space-1);
-  font-style: normal;
-}
-
 .event-list {
   display: flex;
   flex-direction: column;
