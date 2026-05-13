@@ -7,6 +7,12 @@
   background-attachment: fixed;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .splash-page {
+    background-attachment: scroll;
+  }
+}
+
 .splash-page header,
 .splash-page footer {
   background: transparent;
