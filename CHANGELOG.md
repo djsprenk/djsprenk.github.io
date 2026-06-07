@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-06-07
+
+### Added
+
+- Three new gallery photos to the media kit (NYC 2025, Zouk Heat 2023, Toronto
+  Zouk Lambada 2023)
+
 ## [1.1.0] - 2026-05-13
 
 ### Added
