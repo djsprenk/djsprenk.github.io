@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- Events page now shows _To be announced!_ placeholder when there are no
+  upcoming events instead of an empty list
+
 ## [1.2.0] - 2026-06-07
 
 ### Added
