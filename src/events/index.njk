@@ -33,8 +33,9 @@ description: 'Upcoming and past performances by DJ Sprenk — Brazilian Zouk fes
 <h1>Events</h1>
 
 <h2>Upcoming</h2>
+{% set upcomingList = events | upcomingEvents %} {% if upcomingList.length %}
 <ul class="card-stack">
-  {% for event in events | upcomingEvents %}
+  {% for event in upcomingList %}
   <li class="card{% if event.image %} card--horizontal{% endif %}{% if event.url %} card--clickable{% endif %}">
     {% if event.url %}
     <a href="{{ event.url }}" class="card-overlay" target="_blank" rel="noopener" aria-label="{{ event.name }}"></a>
@@ -50,6 +51,9 @@ description: 'Upcoming and past performances by DJ Sprenk — Brazilian Zouk fes
   </li>
   {% endfor %}
 </ul>
+{% else %}
+<p><em>To be announced!</em></p>
+{% endif %}
 
 <h2>Previous</h2>
 {% set milestonesByYear = milestones | indexByYear %}
