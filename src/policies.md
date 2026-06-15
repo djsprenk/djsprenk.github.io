@@ -14,20 +14,23 @@ For any questions, clarifications, or special cases, [get in touch](/contact)!
 
 ## Music Usage Policies
 
-> _What This Covers: Playing Pre-Recorded Music from DJ Sprenk_
+_V2.0 - Last updated 2026-06_
 
-Guiding principles:
+> **What This Covers:** Playing Pre-Recorded Music from DJ Sprenk
 
-1. Music is meant to be shared.
-2. Don't unfairly profit off of it.
+If you want to play a set from DJ Sprenk at an event where **no money** is
+involved, let the music play! You can always support the DJ by tagging on social
+media or leaving a tip.
 
-Put simply, if no money is involved in your event (gatherings, house parties,
-free community socials), let the music play!
+_This includes events like house parties without a cover, practice sessions, and
+free community socials._
 
-For events with **any** sort of fee (even a recommended donation), you _should_
-be tipping your DJ, regardless of whether the event is profitable or not.
+For events with **any** sort of fee, you _should_ be tipping the DJ, regardless
+of whether the event is profitable or not.
 
-A recommended tip is 1-2x the entry / ticket / donation amount.
+_This includes events like paid socials and socials with recommended donations._
+
+A recommended tip is **1-2x the entry / ticket / donation amount**.
 
 ### Special Case – Classes, Warmups & Supervised Práticas
 
@@ -37,5 +40,6 @@ not be hired anyways; turn it up!
 
 ### Weekenders / Larger Events
 
-Festivals and weekenders require individual licensing agreements.
-[Get in touch](/contact) before using any music.
+Festivals and weekenders require special licensing agreements. You must
+[get in touch](/contact) before using any music from DJ Sprenk in these
+contexts.
