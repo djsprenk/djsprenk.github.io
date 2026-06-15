@@ -6,6 +6,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.4.0] - 2026-06-15
+
+### Added
+
+- `/learn` page replacing `/courses` — includes The Loop Academy (year-long
+  beginner-to-working-DJ program at theloop.community, taught by DJ Sprenk, DJ
+  Kron, and DJ Xearo), Private Lessons section, and a Courses subsection for
+  existing content
+- Nav updated from "Courses" to "Learn" linking to `/learn`
+- Booking Policies section on `/policies` covering compensation, travel,
+  equipment, scheduling, cancellations, payment, promotion, and performance
+  recordings
+- Blockquote styling: pink left border, muted italic text, collapsed bottom
+  margin
+
+### Changed
+
+- Music Usage Policies adds styled blockquote
+- PayPal and Venmo handles in Booking Policies linked to their respective
+  payment URLs
+
 ## [1.3.0] - 2026-06-09
 
 ### Changed
