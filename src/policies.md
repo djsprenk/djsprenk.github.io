@@ -14,6 +14,8 @@ For any questions, clarifications, or special cases, [get in touch](/contact)!
 
 ## Music Usage Policies
 
+> _What This Covers: Playing Pre-Recorded Music from DJ Sprenk_
+
 Guiding principles:
 
 1. Music is meant to be shared.
