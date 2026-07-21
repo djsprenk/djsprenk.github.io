@@ -14,19 +14,19 @@ For any questions, clarifications, or special cases, [get in touch](/contact)!
 
 ## Music Usage Policies
 
-_V2.0 - Last updated 2026-06_
+_V2.1 - Last updated 2026-07_
 
 > **What This Covers:** Playing Pre-Recorded Music from DJ Sprenk
 
 If you want to play a set from DJ Sprenk at an event where **no money** is
-involved, let the music play! You can always support the DJ by tagging on social
-media or leaving a tip.
+involved, let the music play! You can always [support](/support) the DJ by
+tagging on social media or leaving a tip.
 
 _This includes events like house parties without a cover, practice sessions, and
 free community socials._
 
-For events with **any** sort of fee, you _should_ be tipping the DJ, regardless
-of whether the event is profitable or not.
+For events with **any** sort of fee, you _should_ be [tipping](/support#tipping)
+the DJ, regardless of whether the event is profitable or not.
 
 _This includes events like paid socials and socials with recommended donations._
 
