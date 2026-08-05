@@ -4,6 +4,7 @@ const path = require('path');
 module.exports = function (eleventyConfig) {
   // Pass assets through to _site unchanged
   eleventyConfig.addPassthroughCopy('src/assets');
+  eleventyConfig.addPassthroughCopy('src/favicon.svg');
 
   // Filters
   const today = new Date().toISOString().slice(0, 10);
