@@ -1,5 +1,20 @@
 [
   {
+    "name": "NYC Zouk Festival",
+    "startDate": "2026-10-01",
+    "endDate": "2026-10-05",
+    "location": "New York, NY, USA",
+    "url": "https://www.nyczoukfest.com/"
+  },
+  {
+    "name": "LAST EVER Mini Zouk PAJAMATHON",
+    "startDate": "2026-08-28",
+    "endDate": "2026-08-30",
+    "location": "Denver, CO, USA",
+    "url": "https://www.facebook.com/events/1430937148779808/",
+    "note": "Music presented virtually"
+  },
+  {
     "name": "Zouk Pirates Weekender with Leandro & Nayara",
     "startDate": "2026-06-05",
     "endDate": "2026-06-07",
