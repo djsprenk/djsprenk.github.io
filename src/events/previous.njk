@@ -18,7 +18,8 @@ title: Previous Events
           event.name }}{% endif %}{% if event.note %} <em>· {{ event.note }}</em>{% endif %}</span
         >
         <span class="timeline-event-meta"
-          >📅 {{ event.startDate | formatDateRangeShort(event.endDate) }} 📍 {{ event.location }}</span
+          >{% include "icons/calendar.svg" %} {{ event.startDate | formatDateRangeShort(event.endDate) }} {% include
+          "icons/map-pin.svg" %} {{ event.location }}</span
         >
       </li>
       {% endfor %}

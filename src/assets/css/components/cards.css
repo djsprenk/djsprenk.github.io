@@ -284,6 +284,12 @@
   white-space: nowrap;
 }
 
+.timeline-event-meta .icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
 .event-list {
   display: flex;
   flex-direction: column;
