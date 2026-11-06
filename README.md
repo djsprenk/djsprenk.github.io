@@ -16,9 +16,11 @@ npm run format    # reformat all files with Prettier
 
 Authoring any push to `main` triggers a site rebuild.
 
-Alternatively, running the `Deploy to GitHub Pages` action from GitHub can be used to trigger a rebuild of site.
+Alternatively, running the `Deploy to GitHub Pages` action from GitHub can be
+used to trigger a rebuild of site.
 
-**NOTE** a new push is required to update data as this isn't automatically updated with a simple GitHub pages build.
+**NOTE** a new push is required to update data as this isn't automatically
+updated with a simple GitHub pages build.
 
 ## Stack
 
