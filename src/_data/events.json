@@ -1,5 +1,19 @@
 [
   {
+    "name": "BraZouky Australia",
+    "startDate": "2027-02-25",
+    "endDate": "2027-02-28",
+    "location": "Prahran, Australia",
+    "url": "https://www.brazouky.com/"
+  },
+  {
+    "name": "Interfusion Festival",
+    "startDate": "2027-01-14",
+    "endDate": "2027-01-18",
+    "location": "Arlington, VA, USA",
+    "url": "https://interfusionfestival.com/"
+  },
+  {
     "name": "NYC Zouk Festival",
     "startDate": "2026-10-01",
     "endDate": "2026-10-05",
