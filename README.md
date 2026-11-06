@@ -12,6 +12,14 @@ npm run build     # build to _site/
 npm run format    # reformat all files with Prettier
 ```
 
+## Publishing
+
+Authoring any push to `main` triggers a site rebuild.
+
+Alternatively, running the `Deploy to GitHub Pages` action from GitHub can be used to trigger a rebuild of site.
+
+**NOTE** a new push is required to update data as this isn't automatically updated with a simple GitHub pages build.
+
 ## Stack
 
 - **Static site generator:** Eleventy 3.x
